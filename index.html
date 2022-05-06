@@ -16,23 +16,23 @@
     <header class="header">
         <div class="contenedor">
             <div class="barra">
-                    <a href="index.html">
-                        <img class="barra__logo" src="img/Larey.png" alt="Imagen Logo">
-                    </a>
-        
-                    <nav class="navegacion">
-                        <a class="navegacion__enlace" href="#">Nosotros</a>
-                        <a class="navegacion__enlace" href="#">Servicios</a>
-                        <a class="navegacion__enlace" href="#">Catalogo</a>
-                        <a class="navegacion__enlace" href="#">Contacto</a>
-                    </nav>
+                <a href="index.html">
+                    <img class="barra__logo" src="img/Larey.png" alt="Imagen Logo">
+                </a>
+    
+                <nav class="navegacion">
+                    <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
+                    <a class="navegacion__enlace" href="servicios.html">Servicios</a>
+                    <a class="navegacion__enlace" href="productos.html">Catalogo</a>
+                    <a class="navegacion__enlace" href="contacto.html">Contacto</a>
+                </nav>
             </div>
             <div class="header__texto">
     
-                <div class="color centar-texto" >
+                <div class="color centrar-texto" >
                     <h1 class="no-margin titulo">Sublimación y Diseño</h1>
     
-                <p class="no-margin centar-texto">Soluciónes en sublimación y vinil</p>
+                <p class="no-margin centrar-texto">Soluciónes en sublimación y vinil</p>
                 </div>
 
             </div>
@@ -43,13 +43,9 @@
         <main class="contenedor">
             <h2>Nosotros</h2>
             
-            <div class="contenido-main">
+            <div class="contenido-main centrar-texto">
                 <img class="sobre-nosotros__imagen" src="img/playera_papa.png" alt="Imganen Nosotros">
-                <img class="sobre-nosotros__imagen" src="img/chalecos.png" alt="Imganen Nosotros">
-                <img class="sobre-nosotros__imagen" src="img/taza_homero.png" alt="Imganen Nosotros">
-                <img class="sobre-nosotros__imagen" src="img/tazas_plantas.png" alt="Imganen Nosotros">
-
-                <p class="sobre-nosotros__texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non excepturi minima a numquam minus quas. Incidunt porro eaque distinctio dolore consequuntur perspiciatis praesentium ea eveniet nemo earum! Laboriosam, itaque odit.</p>
+                <p class="no-margin sobre-nosotros__texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non excepturi minima a numquam minus quas. Incidunt porro eaque distinctio dolore consequuntur perspiciatis praesentium ea eveniet nemo earum! Laboriosam, itaque odit.</p>
             </div>
     
             <h2>Productos</h2>
@@ -58,32 +54,78 @@
                 <div class="productos">
                     <div>
                         <img class="producto__imagen" src="img/playera_negra.jpg" alt="Imagen playera">
-                        <a class="boton__producto" href="productos.html">Playeras</a>
+                        <a class="boton" href="productos.html">Playeras</a>
                     </div>  
                 </div>
                 <div class="productos">
                     <div>
                         <img class="producto__imagen" src="img/taza_blanca.2.png" alt="Imagen playera">
-                        <a class="boton__producto" href="productos.html">Tazas</a>
+                        <a class="boton" href="productos.html">Tazas</a>
                     </div>  
                 </div>
                 <div class="productos">
                     <div>
                         <img class="producto__imagen" src="img/gorra_magenta.jpg" alt="Imagen playera">
-                        <a class="boton__producto" href="productos.html">Gorras</a>
+                        <a class="boton" href="productos.html">Gorras</a>
                     </div>  
                 </div>
                 <div class="productos">
                     <div>
                         <img class="producto__imagen" src="img/playera_roja.jpg" alt="Imagen playera">
-                        <a class="boton__producto" href="productos.html">Playeras</a>
+                        <a class="boton" href="productos.html">Playeras</a>
                     </div>  
                 </div>
                     
             </div>
         </main>
     </div>
-   
+
+    <section>
+        <div class="contenedor2">
+            <h2>Ultimos trabajos</h2>
+    
+            <div class="grid ultimos_trabajos">
+                <img class="imagen_trabajos grid__grande" src="img/chalecos.png" alt="Imgane- ultimos trabajos">
+                <img class="imagen_trabajos" src="img/taza_pantera_rosa.png" alt="Imgane- ultimos trabajos">
+                <img class="imagen_trabajos" src="img/sudadera_papa.png" alt="Imgane- ultimos trabajos">
+                <img class="imagen_trabajos" src="img/taza_homero.png" alt="Imgane- ultimos trabajos">
+                <img class="imagen_trabajos" src="img/playera_caligaris.png" alt="Imgane- ultimos trabajos">
+                <img class="imagen_trabajos grid__grande2" src="img/taza_magica_pareja_corazon.png" alt="Imgane- ultimos trabajos">
+            </div>
+        </div>
+    </section>
+
+    <div class="contenedor3">
+        <h2>Contacto</h2>
+
+        <form class="formulario">
+            <div class="campo">
+                <label class="campo__label">Nombre</label>
+                <input 
+                    class="campo__field"    
+                    placeholder="Nombre"
+                    type="text" 
+                    id="Nombre">
+            </div>
+            <div class="campo">
+                <label class="campo__label">E-mail</label>
+                <input 
+                    class="campo__field"    
+                    placeholder="Tu E-mail"
+                    type="email" 
+                    id="Nombre">
+            </div>
+            <div class="campo">
+                <label class="campo__label" for="mensaje">Mensaje</label>
+                <textarea class="campo__field campo__field--textarea"
+                id="mensaje"></textarea>
+            </div>
+
+            <div class="centrar-texto">
+                <input type="submit" value="Enviar" class="boton boton--secundario">
+            </div>
+        </form>
+    </div>
 
     <footer class="footer">
         <div class="contenedor">
@@ -94,10 +136,10 @@
     
                 <div>
                     <nav class="navegacion">
-                        <a class="navegacion__enlace navegacion__enlace--footer" href="#">Nosotros</a>
-                        <a class="navegacion__enlace navegacion__enlace--footer" href="#">Servicios</a>
-                        <a class="navegacion__enlace navegacion__enlace--footer" href="#">Catalogo</a>
-                        <a class="navegacion__enlace navegacion__enlace--footer" href="#">Contacto</a>
+                        <a class="navegacion__enlace navegacion__enlace--footer" href="nosotros.html">Nosotros</a>
+                        <a class="navegacion__enlace navegacion__enlace--footer" href="servicios.html">Servicios</a>
+                        <a class="navegacion__enlace navegacion__enlace--footer" href="productos.html">Productos</a>
+                        <a class="navegacion__enlace navegacion__enlace--footer" href="contacto.html">Contacto</a>
                     </nav>
                     <section class="contenedor">
                         <div class = "redes-sociales">
@@ -128,7 +170,7 @@
                     </section>
                 </div>
             </div>
-            <p class="footer__texto no-margin centar-texto">® Todos los derechos reservados 2022</p>
+            <p class="footer__texto no-margin centrar-texto">® Todos los derechos reservados 2022</p>
         </div>
     </footer>
 </body>
