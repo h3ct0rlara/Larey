@@ -5,6 +5,7 @@
     --primario: #660066;
     --blanco: #FFFFFF;
     --negro: #000000;
+    --gris: #f1f1f1;
 }
 
 html {
@@ -36,7 +37,7 @@ body {
 }
 
 .contenedor3 {
-    max-width: 75rem;
+    max-width: 90rem;
     width: 90%;
     margin: 0 auto;
 }
@@ -62,6 +63,14 @@ img {width: 100%;}
     margin: 0;
 }
 
+.no-margin-bottom {
+    margin-bottom: 0;
+}
+
+.margin-numero {
+    margin-top: .5rem
+}
+
 .no-padding {
     padding: 0;
 }
@@ -71,12 +80,23 @@ img {width: 100%;}
     line-height: 4.5rem;
 }
 
+.left-texto{
+    text-align: left;
+}
+
 .fondo{
     background-color: var(--primario);
     padding: 2rem 0;
 }
 
 /** Header **/
+.header-redes-sociales {
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
 .header {
     height: 60rem;
     background-image: url(../img/13.jpg);
@@ -92,7 +112,7 @@ img {width: 100%;}
 
 @media (min-width: 768px) {
     .header__texto {
-        margin-top: 32rem;
+        margin-top: 15rem;
     }
 }
 
@@ -104,14 +124,13 @@ img {width: 100%;}
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-top: 1rem;
     }
 }
 
 .barra__logo {
-    max-height: 12rem;
+    max-height: 10rem;
     width: auto;
-    padding-top: 3rem;
+    padding-top: 1rem;
 }
 
 .navegacion {
@@ -253,8 +272,8 @@ img {width: 100%;}
 }
 
 .footer__texto {
-    color: var(--blanco);
-    margin-top: -1rem;
+    color: var(--negro);
+    padding: 1rem 0;
 }
 
 .redes-sociales{
@@ -273,40 +292,48 @@ img {width: 100%;}
 
 /** Formulario Contacto**/
 .formulario {
-    margin: 3rem auto 0 auto;
-    width: 95%;
-    padding: 3rem;
-    background-color: var(--negro);
-    color: var(--blanco);
+    max-width: 50rem;
 }
 
-@media (min-width: 768px) {
-    .formulario {
-        padding: 5rem 5rem 1rem 5rem;
-    }
+.contacto_redes-sociales{
+    display: block;
+    align-items: center;
+    
+    
+}
+
+.contacto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .campo {
     display: flex;
-    margin-bottom: 2rem;
-}
-
-.campo__label {
-    flex:0 0 9rem;
-    text-align: right;
-    padding-right: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .campo__field {
     flex: 1;
+    border: none;
+    background-color: var(--gris);
+    padding: 1rem 1rem;
+    color: ;
 
+}
+
+.campo__numero::-webkit-inner-spin-button,
+.campo__numero::-webkit-outer-spin-button {
+-webkit-appearance: none;
 }
 
 .campo__field--textarea {
     height: 10rem;
 }
 
+
 .boton--secundario {
     display: inline-block;
     padding: 1.5rem 4rem;
+    border-radius: 3rem;
 }
