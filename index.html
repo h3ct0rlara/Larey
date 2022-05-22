@@ -6,342 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Larey</title>
 
-    <!-- Prefetch-->
-    <link rel="prefetch" href="productos.html" as="document">
-    
-    <!-- Preload-->
-
-    <link rel="preload" href="css/normalize.css" as="style">
-    <link rel="stylesheet" href="css/normalize.css">
-
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" crossorigin="crossorigin" as="font" >
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-
-    <link rel="preload" href="css/styles.cs" as="style">
-    <link rel="stylesheet" href="css/styles.css">
-
-     <link rel="icon">
-
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
 </head>
 <body>
-    
-    <div class="header-redes-sociales">
-        <div class="hedaer-contacto">
-
-            <div class="header-contacto-correo">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
-                </svg>
-
-                <p class="no-margin">55 - 00 - 55 - 55 - 00</p>
-            </div>
-            
-            <div class="header-contacto-correo">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <rect x="3" y="5" width="18" height="14" rx="2" />
-                <polyline points="3 7 12 13 21 7" />
-                </svg>
-
-                <p class="no-margin">larey@gmail.com</p>
-            </div>
-              
-        </div>
-        <div class="hedaer-contacto-redes">
-            <a href="https://www.facebook.com/LareySD">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
-                  </svg>
-            </a>
-            <a href="https://www.instagram.com/lareymx/">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <rect x="4" y="4" width="16" height="16" rx="4" />
-                    <circle cx="12" cy="12" r="3" />
-                    <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
-                  </svg>
-            </a>
-            <a href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
-                  </svg>
-            </a>
-            <a href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <rect x="3" y="5" width="18" height="14" rx="2" />
-                    <polyline points="3 7 12 13 21 7" />
-                  </svg>
-            </a>
-        </div>
-        
-    </div>
 
     <header class="header">
-        <div class="contenedor">
-            <div class="barra">
-                <a href="index.html">
-                    <h2 class="logo">Larey</h2>
-                </a>
-    
-                <nav class="navegacion">
-                    <a class="navegacion__enlace" href="nosotros.html">Nosotros</a>
-                    <a class="navegacion__enlace" href="servicios.html">Servicios</a>
-                    <a class="navegacion__enlace" href="productos.html">Productos</a>
-                    <a class="navegacion__enlace" href="contacto.html">Contacto</a>
-                </nav>
-            </div>
-            <div class="header__texto">
-    
-                <div class="color centrar-texto" >
-                    <h1 class="no-margin titulo">Sublimación y Diseño</h1>
-    
-                <p class="no-margin centrar-texto">Soluciónes en sublimación y vinil</p>
-                </div>
+        <div class="header-contacto contenedor">
+            <p>55-00-55-55-00</p>
+            <p>larey@gmail.com</p>
 
+            <div class="redes sociales">
+                <a href="#">
+                    <img src="https://img.icons8.com/ios-filled/30/000000/facebook-new.png"/>
+                </a>
+                <a href="#">
+                    <img src="https://img.icons8.com/ios-glyphs/30/000000/instagram-new.png"/>
+                </a>
+                <a href="#">
+                    <img src="https://img.icons8.com/ios-glyphs/30/000000/twitter--v1.png"/>
+                </a>
+                <a href="#">
+                    <img src="https://img.icons8.com/ios-glyphs/30/000000/new-post.png"/>
+                </a>  
             </div>
         </div>
+
+        <div class="contenedor contenido-header">
+            <a href="index.html">
+                <h1 class="logo">Larey</h1>
+            </a>
+            <div class="busqueda">
+                <input type="search" placeholder="Busca productos, servicios">
+            </div>
+  
+            <nav class="navegacion-principal">
+                <a href="#">Galeria</a>
+                <a href="#">Contacto</a>
+            </nav>
+
+            <a href="#">
+                <img src="https://img.icons8.com/external-nawicon-detailed-outline-nawicon/40/000000/external-trolley-grocery-nawicon-detailed-outline-nawicon.png"/>
+            </a>       
+        </div>
+        <div class="header-texto">
+            <h2>Sublimación y Diseño</h2>
+            <p>Soluciónes en Sublimación y Vinil</p>
+        </div>     
     </header>
 
-    <section class="contenido-main">
-        <div class="contenedor">
-            <div class="centrar-texto contenido-main-texto">
-                <h2 class="logo">Bienvenido a Larey</h2>
-                <p class="no-margin sobre-nosotros__texto">Suspendisse mattis nibh at augue sagittis pellentesque ut in tortor. Cras laoreet suscipit quam, sagittis pharetra quam vulputate sed. Fusce posuere, augue in elementum cursus, sapien nulla blandit quam, vitae ultrices leo dolor vel metus. Sed sed consectetur libero, a ullamcorper sem.</p>
-            </div>
-        </div>
-    </section>
-    
-    <div class="main">
-        <main class="contenedor">
-    
-            <h2>Productos</h2>
-            <div class="grid">
-                    
-                <div class="productos">
-                    <div>
-                        <picture>
-                            <source loading="lazy" srcset="img/playera_negra.webp" type="image/webp">
-                            <img loading="lazy" class="producto__imagen" src="img/playera_negra.jpg" alt="Imagen playera">
-                        </picture>
-                        
-                        <a class="boton" href="productos.html">Playeras</a>
-                    </div>  
-                </div>
-                <div class="productos">
-                    <div>
-                        <picture>
-                            <source loading="lazy" srcset="img/taza_blanca.2.webp" type="image/webp">
-                            <img loading="lazy" class="producto__imagen" src="img/taza_blanca.2.png" alt="Imagen playera">
-                        </picture>
-
-                        <a class="boton" href="productos.html">Tazas</a>
-                    </div>  
-                </div>
-                <div class="productos">
-                    <div>
-                        <picture>
-                            <source loading="lazy" srcset="img/gorra_magenta.webp" type="image/webp">
-                            <img loading="lazy" class="producto__imagen" src="img/gorra_magenta.jpg" alt="Imagen playera">
-                        </picture>
-                        
-                        <a class="boton" href="productos.html">Gorras</a>
-                    </div>  
-                </div>
-                <div class="productos">
-                    <div>
-                        <picture>
-                            <source loading="lazy" srcset="img/playera_roja.webp" type="image/webp">
-                            <img loading="lazy" class="producto__imagen" src="img/playera_roja.jpg" alt="Imagen playera">
-                        </picture>
-                        
-                        <a class="boton" href="productos.html">Playeras</a>
-                    </div>  
-                </div>
-                    
-            </div>
-        </main>
-    </div>
-
-    <section>
-        <div class="contenedor2">
-            <h2>Ultimos trabajos</h2>
-    
-            <div class="grid ultimos_trabajos">
-                <picture class="grid__grande">
-                    <source loading="lazy" srcset="img/chalecos.webp" type="image/webp">
-                    <img loading="lazy" class="imagen_trabajos" src="img/chalecos.png" alt="Imgane- ultimos trabajos">
-                </picture>
-                
-                <picture>
-                    <source loading="lazy" srcset="img/taza_pantera_rosa.webp" type="image/webp">
-                    <img loading="lazy" class="imagen_trabajos" src="img/taza_pantera_rosa.png" alt="Imgane- ultimos trabajos">
-                </picture>
-                
-                <picture>
-                    <source loading="lazy" srcset="img/sudadera_papa.webp" type="image/webp">
-                    <img loading="lazy" class="imagen_trabajos" src="img/sudadera_papa.png" alt="Imgane- ultimos trabajos">
-                </picture>
-                
-                <picture>
-                    <source loading="lazy" srcset="img/taza_homero.webp" type="image/webp">
-                    <img loading="lazy" class="imagen_trabajos" src="img/taza_homero.png" alt="Imgane- ultimos trabajos">
-                </picture>
-                
-                
-                <picture>
-                    <source loading="lazy" srcset="img/playera_caligaris.webp" type="image/webp">
-                    <img loading="lazy" class="imagen_trabajos" src="img/playera_caligaris.png" alt="Imgane- ultimos trabajos">
-                </picture> 
-                
-                <picture class="grid__grande2">
-                    <source loading="lazy" srcset="img/taza_magica_pareja_corazon.webp" type="image/webp">
-                    <img loading="lazy" class="imagen_trabajos" src="img/taza_magica_pareja_corazon.png" alt="Imgane- ultimos trabajos">
-                </picture>
-                
-            </div>
-        </div>
-    </section>
-
-    <div class="contenedor3">
-
-        <div class="contacto">
-
-            <div class="formulario">
-
-                <div>
-                    <h4 class="left-texto--contacto no-margin">Teléfono</h4>
-
-                    <div class="header-contacto-correo">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="16" height="16" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
-                        </svg>
-
-                        <p class="no-margin-bottom">55 - 55 - 00 - 55 - 55</p>
-                    </div>
-                    
-                    <div class="header-contacto-correo margin-negativo">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="16" height="16" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
-                        </svg>
-                        <p>55 - 00 - 55 - 00 - 55</p>
-                    </div>
-                    
-                </div>
-
-                <div>
-                    <h4 class="left-texto--contacto no-margin ">Ubicación</h4>
-                    <div class="header-contacto-correo">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <circle cx="12" cy="11" r="3" />
-                        <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
-                        </svg>
-
-                        <p>28 Jackson Blvd Ste 1020 Chicago IL 60604-2340 United States</p>
-                    </div>
-                    
-                </div>
- 
-                
-                <div class="centrar-contenido ">
-                    <h4 class="left-texto--contacto no-margin">Síguenos</h4>
-                    <p class="header-contacto-correo">© 2022 Política de privacidad</p>
-                    <div class="header-contacto-correo">
-                        <a href="https://www.facebook.com/LareySD">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
-                            </svg>
-                        </a>
-                        <a href="https://www.instagram.com/lareymx/">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <rect x="4" y="4" width="16" height="16" rx="4" />
-                            <circle cx="12" cy="12" r="3" />
-                            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
-                            </svg>
-                        </a>
-                        <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
-                            </svg>
-                        </a>
-                        
-                        <a href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-google" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                <path d="M17.788 5.108a9 9 0 1 0 3.212 6.892h-8" />
-                              </svg>
-                        </a>      
-                    </div>
-                </div>
-            </div>
-
-            <form class="formulario">
-                <h3 class="no-margin left-texto--contacto">Contacto</h3>
-                <p>Envianos tus datos y nuestro equipo se podra en contacto contigo</p>
-                <div class="campo">
-                    <input 
-                        class="campo__field"    
-                        placeholder="Ingresa tu Nombre"
-                        type="text" 
-                        id="Nombre">
-                </div>
-                <div class="campo">
-                    <input 
-                        class="campo__field"    
-                        placeholder="Ingresa un correo valido"
-                        type="email" 
-                        id="Nombre">
-                </div>
-                <div class="campo">
-                    <input 
-                        class="campo__field campo__numero"    
-                        placeholder="Ingresa un numero telefonico (Opcional)"
-                        type="number" 
-                        id="Nombre">
-                </div>
-                <div class="campo">
-                    <textarea 
-                        class="campo__field campo__field--textarea"
-                        id="mensaje"
-                        placeholder="Escribe tu mensaje"></textarea>
-                </div>
-    
-                <div>
-                    <input type="submit" value="Enviar" class="boton boton--secundario">
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <footer class="footer">
-        <div class="contenedor">
-            <div class="barra barra--footer">
-                <a href="index.html">
-                    <h2 class="logo">Larey</h2>
-                </a>
-    
-                <div>
-                    <nav class="navegacion">
-                        <a class="navegacion__enlace navegacion__enlace--footer" href="nosotros.html">Nosotros</a>
-                        <a class="navegacion__enlace navegacion__enlace--footer" href="servicios.html">Servicios</a>
-                        <a class="navegacion__enlace navegacion__enlace--footer" href="productos.html">Productos</a>
-                        <a class="navegacion__enlace navegacion__enlace--footer" href="contacto.html">Contacto</a>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </footer>
-    
-
-    <script src="js/modernizr.js"></script>
 </body>
 </html>
