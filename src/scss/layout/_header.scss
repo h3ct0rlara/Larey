@@ -12,14 +12,14 @@
 .contenido-header {
 
     display: grid;
-    row-gap: 1rem;
+    row-gap: 3.5rem;
     text-align: center;
 
     h1 {
-        margin: 0;
         font-family: v.$fuente_logo;
         color: v.$negro;
         font-size: 6rem;
+        margin: 0;
     }
 
     @include m.tablet {
@@ -31,20 +31,48 @@
 
     @include m.tablet {
         display: grid;
-        grid-template-columns: 1fr 2fr 1fr .2fr;
+        grid-template-columns: 1fr 2fr 1fr;
         align-items: center;
     }
 }
 
 .busqueda {
     display: grid;
+    grid-template-columns: 4fr .2fr;
+    border-radius: .5rem;
+    background-color: v.$blanco;
 
+    // sombra
+    @include m.sombra;
+
+    
     input {
         padding: 1rem;
-        border: 0;
-        background-color: v.$gris;
-        border-radius: 5rem;
+        border: none;
+        background-color: v.$blanco;
         outline: none;
+        border-radius: .5rem;
+    }
+
+    button {
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        background-color: v.$gris;
+        border: none;
+        border-radius: .5rem;
+    } 
+}
+
+.barra-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    @include m.tablet {
+        
+    justify-content: right;
     }
 }
 
@@ -61,20 +89,35 @@
         }
 
         &:hover{
-            color: v.$negro;
+            color: v.$blanco;
         }
     }
 }
 
 .header-texto {
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 2rem;
 
     @include m.tablet {
-        margin-top: 20rem;
+        margin-top: 17rem;
     }
 
-    h2 {
+    h2, p {
         margin: 0;
+        color: v.$blanco;
+        line-height: 1.5;
+    }
+
+    button {
+        border: none;
+        padding: 1.5rem 3rem;
+        background-color: v.$blanco;
+        font-weight: bold;
+        border-radius: .5rem;
+        margin-top: 1rem;
+        color: v.$gris_texto;
+        cursor: pointer;
+
+        @include m.sombra;
     }
 }

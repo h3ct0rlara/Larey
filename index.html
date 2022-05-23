@@ -6,8 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Larey</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+    
+
+    <!-- Preload - Ayuda a cargar archivosmas rapido-->
+    <link rel="preload" href="build/css/app.css" as="style">
     <link rel="stylesheet" href="build/css/app.css">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:ital,wght@0,400;1,600&display=swap" crossorigin="crossorigin" as="font" >
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+
+    <!-- Prefetch - Carga la siguiente pagina que esperas el usuario visite-->
+    <link rel="Prefetch" href="#">
+
 </head>
 <body>
 
@@ -16,7 +26,7 @@
             <p>55-00-55-55-00</p>
             <p>larey@gmail.com</p>
 
-            <div class="redes sociales">
+            <div>
                 <a href="#">
                     <img src="https://img.icons8.com/ios-filled/30/000000/facebook-new.png"/>
                 </a>
@@ -38,22 +48,231 @@
             </a>
             <div class="busqueda">
                 <input type="search" placeholder="Busca productos, servicios">
+                <button type="submit">
+                    <img src="https://img.icons8.com/material-outlined/24/000000/search--v1.png"/>
+                </button>
             </div>
   
-            <nav class="navegacion-principal">
-                <a href="#">Galeria</a>
-                <a href="#">Contacto</a>
-            </nav>
-
-            <a href="#">
-                <img src="https://img.icons8.com/external-nawicon-detailed-outline-nawicon/40/000000/external-trolley-grocery-nawicon-detailed-outline-nawicon.png"/>
-            </a>       
+            <div class="barra-nav">
+                <nav class="navegacion-principal">
+                    <a href="#galeria">Galeria</a>
+                    <a href="#contacto">Contacto</a>
+                </nav>
+    
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="28" height="28" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="6" cy="19" r="2" />
+                        <circle cx="17" cy="19" r="2" />
+                        <path d="M17 17h-11v-14h-2" />
+                        <path d="M6 5l14 1l-1 7h-13" />
+                      </svg>
+                </a>  
+            </div>     
         </div>
         <div class="header-texto">
-            <h2>Sublimación y Diseño</h2>
-            <p>Soluciónes en Sublimación y Vinil</p>
+            <div>
+                <h2>Sublimación y Diseño</h2>
+                <p>Soluciónes en Sublimación y Vinil</p>
+            </div>
+
+            <button type="button" >Ver Tienda</button>
         </div>     
     </header>
 
+    <main class="contenedor contenedor-galeria">
+
+        <h2>Ofertas</h2>
+
+        <div class="contenedor-productos">            
+
+            <div class="galeria-ofertas">
+                <picture class="contenedor-imagen">
+                    <a href="#">
+                        <img src="img/taza_magica.jpg" alt="Imagen Oferta">
+                    </a>     
+                </picture>
+                <picture class="contenedor-imagen">
+                    <a href="#">
+                        <img src="img/cubre-bocas.png" alt="Imagen Oferta">
+                    </a>     
+                </picture>
+                <picture class="contenedor-imagen">
+                    <a href="#">
+                        <img src="img/taza_blanca.2.png" alt="Imagen Oferta">
+                    </a>     
+                </picture>
+                <picture class="contenedor-imagen">
+                    <a href="#">
+                        <img src="img/cubre-bocas.png" alt="Imagen Oferta">
+                    </a>     
+                </picture>
+                <picture class="contenedor-imagen ultima-oferta">
+                    <a href="#">
+                        <img src="img/taza_magica.jpg" alt="Imagen Oferta">
+                    </a>     
+                </picture>
+            </div>
+        </div>
+
+        <div class="contenedor-productos" id="galeria">
+            <h2 class="galeria-titulo">Colección: <span>Playeras</span></h2>
+
+            <div class="galeria">
+                <picture class="contenedor-imagen playera-grande">
+                    <a href="#">
+                        <img src="img/playera_roja.jpg" alt="Imagen playera">
+                    </a>     
+                </picture>
+                <picture class="contenedor-imagen">
+                    <a href="#">
+                        <img src="img/playera_negra.jpg" alt="Imagen playera">
+                    </a>
+                </picture>
+                <picture class="contenedor-imagen">
+                    <a href="#">
+                        <img src="img/playera_verde.jpg" alt="Imagen playera">
+                    </a>
+                </picture>
+                <picture class="contenedor-imagen">
+                    <a href="">
+                        <img src="img/playera_blanca.jpg" alt="Imagen playera">
+                    </a>
+                </picture>
+                <picture class="contenedor-imagen">
+                    <a href="#">
+                        <img src="img/playera_blanca.jpg" alt="Imagen playera">
+                    </a>
+                </picture>
+                <picture class="contenedor-imagen">
+                    <a href="#">
+                        <img src="img/playera_negra.jpg" alt="Imagen playera">
+                    </a>     
+                </picture>
+                <picture class="contenedor-imagen">
+                    <a href="">
+                        <img src="img/playera_verde.jpg" alt="Imagen playera">
+                    </a>   
+                </picture>
+            </div>
+        </div>
+
+        <div>
+            <h2 class="galeria-titulo">Colección: <span>Gorras</span></h2>
+
+            <div class="galeria">
+                <picture class="contenedor-imagen">
+                    <a href="#">
+                        <img src="img/gorra_magenta.jpg" alt="Imagen Gorra">
+                    </a>     
+                </picture>
+                <picture class="contenedor-imagen">
+                    <a href="#">
+                        <img src="img/gorra_vino.jpg" alt="Imagen Gorra">
+                    </a>
+                </picture>
+                <picture class="contenedor-imagen">
+                    <a href="#">
+                        <img src="img/gorra_magenta.jpg" alt="Imagen Gorra">
+                    </a>
+                </picture>
+                <picture class="contenedor-imagen">
+                    <a href="">
+                        <img src="img/gorra_azul.jpg" alt="Imagen Gorra">
+                    </a>
+                </picture>
+                <picture class="contenedor-imagen">
+                    <a href="#">
+                        <img src="img/gorra_negra.jpg" alt="Imagen Gorra">
+                    </a>
+                </picture>
+                <picture class="contenedor-imagen">
+                    <a href="#">
+                        <img src="img/gorra_vino.jpg" alt="Imagen Gorra">
+                    </a>     
+                </picture>
+                <picture class="contenedor-imagen gorra-grande">
+                    <a href="">
+                        <img src="img/gorra_negra.jpg" alt="Imagen Gorra">
+                    </a>   
+                </picture>
+            </div>
+        </div>
+    </main>
+
+    <section>
+        <div class="pago-seguro contenedor">
+            <div class="pago-seguro-contenido">
+                <img src="https://img.icons8.com/ios/100/000000/bank-card-front-side--v1.png"/>
+                <h3>Elige como pagar</h3>
+                <p>Inventore doloremque unde ut rerum dolore, magnam fuga ea harum corrupti adipisci.</p>
+            </div>
+   
+            <div class="pago-seguro-contenido">
+                <img src="https://img.icons8.com/wired/100/000000/box--v1.png"/>
+                <h3>Envio Gratis desde $299</h3>
+                <p>Inventore doloremque unde ut rerum dolore, magnam fuga ea harum corrupti adipisci.</p>
+            </div>
+
+            <div class="pago-seguro-contenido">
+                <img src="https://img.icons8.com/ios/100/000000/security-checked.png"/>
+                <h3>Seguridad</h3>
+                <p>Inventore doloremque unde ut rerum dolore, magnam fuga ea harum corrupti adipisci.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="contenedor formulario" id="contacto">
+        <div class="redes-sociales">
+            <div>
+                <h3>Telefono</h3>
+                <p>55-00-55-55-00</p>
+                <p>55-00-55-55-00</p>
+            </div>
+
+            <div> 
+                <h3>Síguenos</h3>
+
+                <div>
+                    <a href="#">
+                        <img src="https://img.icons8.com/ios-filled/30/000000/facebook-new.png"/>
+                    </a>
+                    <a href="#">
+                        <img src="https://img.icons8.com/ios-glyphs/30/000000/instagram-new.png"/>
+                    </a>
+                    <a href="#">
+                        <img src="https://img.icons8.com/ios-glyphs/30/000000/twitter--v1.png"/>
+                    </a>
+                    <a href="#">
+                        <img src="https://img.icons8.com/ios-glyphs/30/000000/new-post.png"/>
+                    </a> 
+                </div>
+            </div>
+            
+             
+        </div>
+        <form class="campos">
+
+            <h2>Contactanos</h2>
+            <p>Envianos tus datos y nuestro equipo se podra en contacto contigo</p>
+
+            <input type="text" placeholder="Ingresa tu nombre">
+            <input type="email" placeholder="Ingresa tu correo">
+            <input type="number" placeholder="Numero de telefono">
+            <textarea id="mensaje" placeholder="Escribe tu mensaje"></textarea>
+
+            <input class="formulario-boton" type="submit" value="Enviar">
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="contenedor footer-contenido">
+            <p>Condiciones de uso</p>
+            <p>Aviso de privacidad</p>
+            <p>© 2022, Larey.com, Inc. o sus afiliados</p>
+        </div>
+    </footer>
+
+    <script src="js/modernizr.js"></script>
 </body>
 </html>

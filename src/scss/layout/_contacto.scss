@@ -4,16 +4,26 @@
 
 .header-contacto {
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+    p {
+        margin: 0;
+        font-size: 1.5rem;
+        row-gap: 2rem;
+        margin-bottom: 2rem;
+        align-items: center;
+    }
+
     @include m.tablet {
         display: flex;
         flex-direction: row;
         justify-content: right;
         align-items: center;
         gap: 2rem;
-       p {
-           margin: 0;
-           font-size: 1.5rem;
-       }
+        padding-top: 1rem;
+        margin-bottom: 0;
+        p {
+            margin: 0;
+        }
     }
 }
