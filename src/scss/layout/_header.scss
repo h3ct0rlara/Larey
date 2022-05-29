@@ -2,7 +2,8 @@
 @use 'base/mixins' as m;
 
 .header {
-    background-image: url(../../../img/banner.jpg);
+    background-image: url(../../../img/banner_god.svg);
+    padding-top: 3rem;
     height: 60rem;
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,20 +16,6 @@
     row-gap: 3.5rem;
     text-align: center;
 
-    h1 {
-        font-family: v.$fuente_logo;
-        color: v.$negro;
-        font-size: 6rem;
-        margin: 0;
-    }
-
-    @include m.tablet {
-        h1 {
-            text-align: left;
-        }
-    }
-
-
     @include m.tablet {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
@@ -36,32 +23,49 @@
     }
 }
 
+.logo {
+    max-width: 13rem;
+    margin-top: 1rem;
+
+    @include m.tablet {
+        display: flex;  
+        justify-content: left;
+        margin-top: 0;
+    }
+}
+
 .busqueda {
     display: grid;
     grid-template-columns: 4fr .2fr;
-    border-radius: .5rem;
     background-color: v.$blanco;
+    padding: .5rem;
+    position: relative;
+    margin-bottom: 0;
+    justify-content: center;
 
     // sombra
     @include m.sombra;
 
-    
     input {
-        padding: 1rem;
         border: none;
-        background-color: v.$blanco;
         outline: none;
-        border-radius: .5rem;
-    }
-
-    button {
-        display: flex;
-        cursor: pointer;
-        align-items: center;
-        background-color: v.$gris;
-        border: none;
-        border-radius: .5rem;
     } 
+}
+
+.bt-busqueda {
+    background-image: url(../../../img/lupa.png);
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-color: v.$gris;
+    text-indent: -9999px;
+    width: 23px;
+    background-position: center center;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .barra-nav {
@@ -74,22 +78,54 @@
         
     justify-content: right;
     }
+
+    img {
+        max-width: 23px;
+    }
+
+    
 }
+
+.submenu {
+    position: relative;
+}
+
+.submenu {
+    #carrito{
+        display: none;
+    }
+
+  
+}
+
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right:0;
+
+    top:100%;
+    z-index: 1;
+    background-color: v.$blanco;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+}
+
 
 .navegacion-principal {
     justify-content: center;
 
     a {
-        color: v.$negro;
-        font-size: 2rem;
+        color: v.$blanco;
         margin-right: 1rem;
+        font-size: 2rem;
 
         &:last-child {
             margin-right: 0;
         }
 
         &:hover{
-            color: v.$blanco;
+            color: v.$morado_texto
         }
     }
 }
@@ -102,20 +138,25 @@
         margin-top: 17rem;
     }
 
-    h2, p {
+    h1, p {
         margin: 0;
-        color: v.$blanco;
         line-height: 1.5;
+        color: v.$negro;
+
+        @include m.tablet {
+            color: v.$negro;
+        }
     }
 
     button {
+        font-family: v.$fuente_principal;
         border: none;
-        padding: 1.5rem 3rem;
         background-color: v.$blanco;
         font-weight: bold;
         border-radius: .5rem;
         margin-top: 1rem;
-        color: v.$gris_texto;
+        color: v.$morado_texto;
+        letter-spacing: 0;
         cursor: pointer;
 
         @include m.sombra;

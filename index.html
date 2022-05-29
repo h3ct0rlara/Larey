@@ -9,11 +9,16 @@
     
 
     <!-- Preload - Ayuda a cargar archivosmas rapido-->
-    <link rel="preload" href="build/css/app.css" as="style">
-    <link rel="stylesheet" href="build/css/app.css">
+    <link rel="stylesheet" href="build/css/normalize.css">
+    <link rel="stylesheet" href="build/css/skeleton.css">
+
 
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:ital,wght@0,400;1,600&display=swap" crossorigin="crossorigin" as="font" >
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+
+
+    <link rel="preload" href="build/css/app.css" as="style">
+    <link rel="stylesheet" href="build/css/app.css">
 
     <!-- Prefetch - Carga la siguiente pagina que esperas el usuario visite-->
     <link rel="Prefetch" href="#">
@@ -22,36 +27,15 @@
 <body>
 
     <header class="header">
-        <div class="header-contacto contenedor">
-            <p>55-00-55-55-00</p>
-            <p>larey@gmail.com</p>
-
-            <div>
-                <a href="#">
-                    <img src="https://img.icons8.com/ios-filled/30/000000/facebook-new.png"/>
-                </a>
-                <a href="#">
-                    <img src="https://img.icons8.com/ios-glyphs/30/000000/instagram-new.png"/>
-                </a>
-                <a href="#">
-                    <img src="https://img.icons8.com/ios-glyphs/30/000000/twitter--v1.png"/>
-                </a>
-                <a href="#">
-                    <img src="https://img.icons8.com/ios-glyphs/30/000000/new-post.png"/>
-                </a>  
-            </div>
-        </div>
-
         <div class="contenedor contenido-header">
             <a href="index.html">
-                <h1 class="logo">Larey</h1>
+                <img class="logo" src="img/Logo.png" alt="Imagen Logo">
             </a>
-            <div class="busqueda">
-                <input type="search" placeholder="Busca productos, servicios">
-                <button type="submit">
-                    <img src="https://img.icons8.com/material-outlined/24/000000/search--v1.png"/>
-                </button>
-            </div>
+            
+            <form class="busqueda" action="/buscador" method="POST" id="buscador">
+                <input type="text" name="busqueda" placeholder="Busca productos, servicios">
+                <input class="bt-busqueda" type="submit" value="Buscar" id="btn-submit">
+            </form>
   
             <div class="barra-nav">
                 <nav class="navegacion-principal">
@@ -59,20 +43,35 @@
                     <a href="#contacto">Contacto</a>
                 </nav>
     
-                <a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="28" height="28" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <circle cx="6" cy="19" r="2" />
-                        <circle cx="17" cy="19" r="2" />
-                        <path d="M17 17h-11v-14h-2" />
-                        <path d="M6 5l14 1l-1 7h-13" />
-                      </svg>
-                </a>  
+                <div class="two columns u-pull-right">
+                    <ul>
+                        <li class="submenu">
+                                <img src="img/cart.svg" id="img-carrito">
+                                <div id="carrito">
+                                        
+                                        <table id="lista-carrito" class="u-full-width">
+                                            <thead>
+                                                <tr>
+                                                    <th>Imagen</th>
+                                                    <th>Nombre</th>
+                                                    <th>Precio</th>
+                                                    <th>Cantidad</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody></tbody>
+                                        </table>
+    
+                                        <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                                </div>
+                        </li>
+                    </ul>
+                </div>
             </div>     
         </div>
         <div class="header-texto">
             <div>
-                <h2>Sublimación y Diseño</h2>
+                <h1>Sublimación y Diseño</h1>
                 <p>Soluciónes en Sublimación y Vinil</p>
             </div>
 
@@ -87,31 +86,84 @@
         <div class="contenedor-productos">            
 
             <div class="galeria-ofertas">
-                <picture class="contenedor-imagen">
-                    <a href="#">
-                        <img src="img/taza_magica.jpg" alt="Imagen Oferta">
-                    </a>     
-                </picture>
-                <picture class="contenedor-imagen">
-                    <a href="#">
-                        <img src="img/cubre-bocas.png" alt="Imagen Oferta">
-                    </a>     
-                </picture>
-                <picture class="contenedor-imagen">
-                    <a href="#">
-                        <img src="img/taza_blanca.2.png" alt="Imagen Oferta">
-                    </a>     
-                </picture>
-                <picture class="contenedor-imagen">
-                    <a href="#">
-                        <img src="img/cubre-bocas.png" alt="Imagen Oferta">
-                    </a>     
-                </picture>
-                <picture class="contenedor-imagen ultima-oferta">
-                    <a href="#">
-                        <img src="img/taza_magica.jpg" alt="Imagen Oferta">
-                    </a>     
-                </picture>
+                <a href="#">
+                    <div class="contenedor-ofertas">
+                        <picture class="contenedor-imagen">
+                                <img src="img/taza_magica.jpg" alt="Imagen Oferta">
+
+                        </picture>
+
+                        <div class="oferta-info">
+                            <p class="oferta"><span>$600</span></p>
+                            <p class="precio"><samp>$855</samp></p>
+                            <p class="info">Placeat error possimus blanditiis deserunt minima enim quam obcaecati voluptatum? Ullam, fugiat vero</p>
+                        </div>
+                    </div>
+                    
+                </a>
+
+                <a href="#">
+                    <div class="contenedor-ofertas">
+                        <picture class="contenedor-imagen">
+                                <img src="img/gorra_azul.jpg" alt="Imagen Oferta">
+                        </picture>
+
+                        <div class="oferta-info">
+                            <p class="oferta"><span>$600</span></p>
+                            <p class="precio"><samp>$855</samp></p>
+                            <p class="info">Placeat error possimus blanditiis deserunt minima enim quam obcaecati voluptatum? Ullam, fugiat vero</p>
+                        </div>
+                    </div>
+                    
+                </a>
+
+                <a href="#">
+                    <div class="contenedor-ofertas">
+                        <picture class="contenedor-imagen">
+                                <img src="img/playera_roja.jpg" alt="Imagen Oferta">
+
+                        </picture>
+
+                        <div class="oferta-info">
+                            <p class="oferta"><span>$600</span></p>
+                            <p class="precio"><samp>$855</samp></p>
+                            <p class="info">Placeat error possimus blanditiis deserunt minima enim quam obcaecati voluptatum? Ullam, fugiat vero</p>
+                        </div>
+                    </div>
+                    
+                </a>
+
+                <a href="#">
+                    <div class="contenedor-ofertas">
+                        <picture class="contenedor-imagen">
+                                <img src="img/gorra_magenta.jpg" alt="Imagen Oferta">
+
+                        </picture>
+
+                        <div class="oferta-info">
+                            <p class="oferta"><span>$600</span></p>
+                            <p class="precio"><samp>$855</samp></p>
+                            <p class="info">Placeat error possimus blanditiis deserunt minima enim quam obcaecati voluptatum? Ullam, fugiat vero</p>
+                        </div>
+                    </div>
+                    
+                </a>
+
+                <a href="#">
+                    <div class="contenedor-ofertas">
+                        <picture class="contenedor-imagen">
+                                <img src="img/taza_blanca.2.png" alt="Imagen Oferta">
+
+                        </picture>
+
+                        <div class="oferta-info">
+                            <p class="oferta"><span>$600</span></p>
+                            <p class="precio"><samp>$855</samp></p>
+                            <p class="info">Placeat error possimus blanditiis deserunt minima enim quam obcaecati voluptatum? Ullam, fugiat vero Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus reprehenderit ipsa architecto iste veniam labore! Rerum, in quisquam! Quae magni iure possimus quam, in ea cupiditate cumque itaque consectetur pariatur.</p>
+                        </div>
+                    </div>
+                    
+                </a>
             </div>
         </div>
 
@@ -198,6 +250,48 @@
                 </picture>
             </div>
         </div>
+
+
+        <section>
+            <h2>Más productos</h2>
+            <div class="productos">
+                <a href="#">
+                    <div class="producto-varios">
+                        <picture class="contenedor-imagen">
+                            <img src="" alt="Imagen Producto">
+                        </picture>
+                        <h2>Cubrebocas</h2>
+                    </div> 
+                </a>
+
+                <a href="#">
+                    <div class="producto-varios">
+                        <picture class="contenedor-imagen">
+                            <img src="" alt="Imagen Producto">
+                        </picture>
+                        <h2>Sudaderas</h2>
+                    </div> 
+                </a>
+
+                <a href="#">
+                    <div class="producto-varios">
+                        <picture class="contenedor-imagen">
+                            <img src="" alt="Imagen Producto">
+                        </picture>
+                        <h2>Pergaminos</h2>
+                    </div> 
+                </a>
+
+                <a href="#">
+                    <div class="producto-varios">
+                        <picture class="contenedor-imagen">
+                            <img src="" alt="Imagen Producto">
+                        </picture>
+                        <h2>Cogines</h2>
+                    </div> 
+                </a>
+            </div>
+        </section>
     </main>
 
     <section>
@@ -241,7 +335,7 @@
                         <img src="https://img.icons8.com/ios-glyphs/30/000000/instagram-new.png"/>
                     </a>
                     <a href="#">
-                        <img src="https://img.icons8.com/ios-glyphs/30/000000/twitter--v1.png"/>
+                        <img src="https://img.icons8.com/material-rounded/30/000000/whatsapp--v1.png"/>
                     </a>
                     <a href="#">
                         <img src="https://img.icons8.com/ios-glyphs/30/000000/new-post.png"/>
@@ -272,6 +366,21 @@
             <p>© 2022, Larey.com, Inc. o sus afiliados</p>
         </div>
     </footer>
+
+    <div class="header-contacto">
+        <a href="#">
+            <img src="https://img.icons8.com/ios-filled/30/000000/facebook-new.png"/>
+        </a>
+        <a href="#">
+            <img src="https://img.icons8.com/ios-glyphs/30/000000/instagram-new.png"/>
+        </a>
+        <a href="#">
+            <img src="https://img.icons8.com/material-rounded/30/000000/whatsapp--v1.png"/>
+        </a>
+        <a href="#">
+            <img src="https://img.icons8.com/ios-glyphs/30/000000/new-post.png"/>
+        </a>  
+    </div>
 
     <script src="js/modernizr.js"></script>
 </body>

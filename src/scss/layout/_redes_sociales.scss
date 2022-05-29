@@ -1,0 +1,14 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.header-contacto {
+    display: grid;
+    position: fixed;
+    
+    @include m.tablet {
+        top: 40%;
+        left: 1rem;
+        gap: 1.5rem;
+    }
+}

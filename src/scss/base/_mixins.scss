@@ -1,7 +1,7 @@
 @use 'variables' as v;
 
 @mixin phone {
-    @media (min-width: v.$telefono){
+    @media (min-width: v.$phone){
         @content;
     }
 }
@@ -26,7 +26,20 @@
 
 
 @mixin sombra {
-    -webkit-box-shadow: 3px 3px 13px -1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 3px 3px 13px -1px rgba(0,0,0,0.75);
-    box-shadow: 3px 3px 13px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.16);
+-moz-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.16);
+box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.16);
+}
+
+@mixin formatear {
+    margin: 0;
+    padding: 0;
+    height: 0;
+    width: 0;
+    line-height: 0;
+    letter-spacing: 0;
+    text-decoration: 0;
+    font-weight: 0;
+    font-size: 0;
+    text-align: center;
 }
