@@ -38,7 +38,7 @@
     display: grid;
     grid-template-columns: 4fr .2fr;
     background-color: v.$blanco;
-    padding: .5rem;
+    padding: 1rem;
     position: relative;
     margin-bottom: 0;
     justify-content: center;
@@ -61,7 +61,7 @@
     height: 100%;
     background-color: v.$gris;
     text-indent: -9999px;
-    width: 23px;
+    width: 4rem;
     background-position: center center;
     &:hover {
         cursor: pointer;
@@ -85,32 +85,6 @@
 
     
 }
-
-.submenu {
-    position: relative;
-}
-
-.submenu {
-    #carrito{
-        display: none;
-    }
-
-  
-}
-
-.submenu:hover #carrito{
-    display: block;
-    position: absolute;
-    right:0;
-
-    top:100%;
-    z-index: 1;
-    background-color: v.$blanco;
-    padding: 20px;
-    min-height: 400px;
-    min-width: 300px;
-}
-
 
 .navegacion-principal {
     justify-content: center;
@@ -149,15 +123,13 @@
     }
 
     button {
-        font-family: v.$fuente_principal;
         border: none;
         background-color: v.$blanco;
-        font-weight: bold;
         border-radius: .5rem;
         margin-top: 1rem;
         color: v.$morado_texto;
-        letter-spacing: 0;
         cursor: pointer;
+        padding: 1rem 2rem;
 
         @include m.sombra;
     }

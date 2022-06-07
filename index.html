@@ -39,36 +39,33 @@
   
             <div class="barra-nav">
                 <nav class="navegacion-principal">
-                    <a href="#galeria">Galeria</a>
+                    <a href="#galeria">Productos</a>
                     <a href="#contacto">Contacto</a>
                 </nav>
     
-                <div class="two columns u-pull-right">
-                    <ul>
-                        <li class="submenu">
-                                <img src="img/cart.svg" id="img-carrito">
-                                <div id="carrito">
-                                        
-                                        <table id="lista-carrito" class="u-full-width">
-                                            <thead>
-                                                <tr>
-                                                    <th>Imagen</th>
-                                                    <th>Nombre</th>
-                                                    <th>Precio</th>
-                                                    <th>Cantidad</th>
-                                                    <th></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody></tbody>
-                                        </table>
-    
-                                        <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
-                                </div>
-                        </li>
-                    </ul>
+                <div class="submenu">
+                    <a href="#">
+                        <img src="img/cart.svg" id="img-carrito">
+                    </a>
+                    <div id="carrito">       
+                            <table id="lista-carrito" class="">
+                                <thead>
+                                    <tr class="titulos-carrito">
+                                        <th>Producto</th>
+                                        <th>Precio</th>
+                                        <th>Cantidad</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+
+                            <a href="#" id="vaciar-carrito" class="vaciar-carrito">Vaciar Carrito</a>
+                    </div>
                 </div>
             </div>     
         </div>
+
         <div class="header-texto">
             <div>
                 <h1>Sublimación y Diseño</h1>
@@ -159,7 +156,7 @@
                         <div class="oferta-info">
                             <p class="oferta"><span>$600</span></p>
                             <p class="precio"><samp>$855</samp></p>
-                            <p class="info">Placeat error possimus blanditiis deserunt minima enim quam obcaecati voluptatum? Ullam, fugiat vero Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus reprehenderit ipsa architecto iste veniam labore! Rerum, in quisquam! Quae magni iure possimus quam, in ea cupiditate cumque itaque consectetur pariatur.</p>
+                            <p class="info">Placeat error possimus blanditiis deserunt minima enim quam obcaecati voluptatum? Ullam, fugiat vero Lorem ipsum</p>
                         </div>
                     </div>
                     
@@ -167,131 +164,38 @@
             </div>
         </div>
 
+        <h2 class="galeria-titulo">Productos</h2>
+
         <div class="contenedor-productos" id="galeria">
-            <h2 class="galeria-titulo">Colección: <span>Playeras</span></h2>
 
             <div class="galeria">
-                <picture class="contenedor-imagen playera-grande">
-                    <a href="#">
+                <a class="producto-grande" href="#">
+                    <picture class="contenedor-imagen">
                         <img src="img/playera_roja.jpg" alt="Imagen playera">
-                    </a>     
-                </picture>
-                <picture class="contenedor-imagen">
-                    <a href="#">
-                        <img src="img/playera_negra.jpg" alt="Imagen playera">
-                    </a>
-                </picture>
-                <picture class="contenedor-imagen">
-                    <a href="#">
-                        <img src="img/playera_verde.jpg" alt="Imagen playera">
-                    </a>
-                </picture>
-                <picture class="contenedor-imagen">
-                    <a href="">
-                        <img src="img/playera_blanca.jpg" alt="Imagen playera">
-                    </a>
-                </picture>
-                <picture class="contenedor-imagen">
-                    <a href="#">
-                        <img src="img/playera_blanca.jpg" alt="Imagen playera">
-                    </a>
-                </picture>
-                <picture class="contenedor-imagen">
-                    <a href="#">
-                        <img src="img/playera_negra.jpg" alt="Imagen playera">
-                    </a>     
-                </picture>
-                <picture class="contenedor-imagen">
-                    <a href="">
-                        <img src="img/playera_verde.jpg" alt="Imagen playera">
-                    </a>   
-                </picture>
+                    </picture>
+                </a>
+                <a href="#">
+                    <picture class="contenedor-imagen">
+                        <img src="img/gorra_azul.jpg" alt="Imagen playera">
+                    </picture>
+                </a>
+                <a href="#">
+                    <picture class="contenedor-imagen">
+                        <img src="img/taza_magica.jpg" alt="Imagen playera">
+                    </picture>
+                </a>
+                <a href="">
+                    <picture class="contenedor-imagen">
+                        <img src="img/taza_blanca.2.png" alt="Imagen playera">
+                    </picture>
+                </a>
+                <a href="#">
+                    <picture class="contenedor-imagen">
+                        <img src="img/gorra_magenta.jpg" alt="Imagen playera">
+                    </picture>
+                </a>
             </div>
         </div>
-
-        <div>
-            <h2 class="galeria-titulo">Colección: <span>Gorras</span></h2>
-
-            <div class="galeria">
-                <picture class="contenedor-imagen">
-                    <a href="#">
-                        <img src="img/gorra_magenta.jpg" alt="Imagen Gorra">
-                    </a>     
-                </picture>
-                <picture class="contenedor-imagen">
-                    <a href="#">
-                        <img src="img/gorra_vino.jpg" alt="Imagen Gorra">
-                    </a>
-                </picture>
-                <picture class="contenedor-imagen">
-                    <a href="#">
-                        <img src="img/gorra_magenta.jpg" alt="Imagen Gorra">
-                    </a>
-                </picture>
-                <picture class="contenedor-imagen">
-                    <a href="">
-                        <img src="img/gorra_azul.jpg" alt="Imagen Gorra">
-                    </a>
-                </picture>
-                <picture class="contenedor-imagen">
-                    <a href="#">
-                        <img src="img/gorra_negra.jpg" alt="Imagen Gorra">
-                    </a>
-                </picture>
-                <picture class="contenedor-imagen">
-                    <a href="#">
-                        <img src="img/gorra_vino.jpg" alt="Imagen Gorra">
-                    </a>     
-                </picture>
-                <picture class="contenedor-imagen gorra-grande">
-                    <a href="">
-                        <img src="img/gorra_negra.jpg" alt="Imagen Gorra">
-                    </a>   
-                </picture>
-            </div>
-        </div>
-
-
-        <section>
-            <h2>Más productos</h2>
-            <div class="productos">
-                <a href="#">
-                    <div class="producto-varios">
-                        <picture class="contenedor-imagen">
-                            <img src="" alt="Imagen Producto">
-                        </picture>
-                        <h2>Cubrebocas</h2>
-                    </div> 
-                </a>
-
-                <a href="#">
-                    <div class="producto-varios">
-                        <picture class="contenedor-imagen">
-                            <img src="" alt="Imagen Producto">
-                        </picture>
-                        <h2>Sudaderas</h2>
-                    </div> 
-                </a>
-
-                <a href="#">
-                    <div class="producto-varios">
-                        <picture class="contenedor-imagen">
-                            <img src="" alt="Imagen Producto">
-                        </picture>
-                        <h2>Pergaminos</h2>
-                    </div> 
-                </a>
-
-                <a href="#">
-                    <div class="producto-varios">
-                        <picture class="contenedor-imagen">
-                            <img src="" alt="Imagen Producto">
-                        </picture>
-                        <h2>Cogines</h2>
-                    </div> 
-                </a>
-            </div>
-        </section>
     </main>
 
     <section>
@@ -304,7 +208,7 @@
    
             <div class="pago-seguro-contenido">
                 <img src="https://img.icons8.com/wired/100/000000/box--v1.png"/>
-                <h3>Envio Gratis desde $299</h3>
+                <h3>Envio Gratis desde $599</h3>
                 <p>Inventore doloremque unde ut rerum dolore, magnam fuga ea harum corrupti adipisci.</p>
             </div>
 

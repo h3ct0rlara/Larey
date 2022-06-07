@@ -1,0 +1,38 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.submenu {
+    position: relative;
+}
+
+.submenu {
+    #carrito{
+        display: none;
+    }
+}
+
+.submenu:hover #carrito{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    right:0;
+
+    top:100%;
+    z-index: 1;
+    background-color: v.$blanco;
+    padding: 1rem;
+    min-height: 30rem;
+    min-width: 20rem;
+}
+
+.titulos-carrito {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.vaciar-carrito {
+    padding: 1rem;
+    background-color: v.$morado_texto;
+    color: v.$blanco;
+}

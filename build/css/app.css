@@ -364,6 +364,11 @@ p {
   margin: 0 auto;
 }
 
+.contenedor-imagen img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
 a {
   text-decoration: none;
 }
@@ -422,7 +427,7 @@ h3 {
   display: grid;
   grid-template-columns: 4fr 0.2fr;
   background-color: #FFFFFF;
-  padding: 0.5rem;
+  padding: 1rem;
   position: relative;
   margin-bottom: 0;
   justify-content: center;
@@ -444,7 +449,7 @@ h3 {
   height: 100%;
   background-color: #eeeeee;
   text-indent: -9999px;
-  width: 23px;
+  width: 4rem;
   background-position: center center;
 }
 .bt-busqueda:hover {
@@ -464,26 +469,6 @@ h3 {
 }
 .barra-nav img {
   max-width: 23px;
-}
-
-.submenu {
-  position: relative;
-}
-
-.submenu #carrito {
-  display: none;
-}
-
-.submenu:hover #carrito {
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 100%;
-  z-index: 1;
-  background-color: #FFFFFF;
-  padding: 20px;
-  min-height: 400px;
-  min-width: 300px;
 }
 
 .navegacion-principal {
@@ -521,18 +506,20 @@ h3 {
   }
 }
 .header-texto button {
-  font-family: "Montserrat", sans-serif;
   border: none;
   background-color: #FFFFFF;
-  font-weight: bold;
   border-radius: 0.5rem;
   margin-top: 1rem;
   color: #540261;
-  letter-spacing: 0;
   cursor: pointer;
+  padding: 1rem 2rem;
   -webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.16);
   -moz-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.16);
   box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.16);
+}
+
+.galeria-ofertas a {
+  margin: auto auto;
 }
 
 .contenedor-galeria {
@@ -541,10 +528,6 @@ h3 {
 .contenedor-galeria h2 {
   font-weight: 400;
   color: #999;
-}
-.contenedor-galeria h2 span {
-  font-weight: 700;
-  color: #540261;
 }
 
 .galeria-ofertas {
@@ -571,39 +554,6 @@ h3 {
   .galeria-ofertas {
     grid-template-columns: repeat(5, 1fr);
   }
-}
-
-.ultima-oferta {
-  grid-area: 3/4;
-  grid-column: 1/3;
-}
-@media (min-width: 768px) {
-  .ultima-oferta {
-    grid-column: 5/6;
-    grid-row: 1/2;
-  }
-}
-
-.contenedor-productos {
-  margin: 5rem 0;
-}
-
-.galeria {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-}
-@media (min-width: 768px) {
-  .galeria {
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-  }
-}
-
-.contenedor-imagen img {
-  max-height: 100%;
-  max-width: 100%;
-  background-position: center center;
 }
 
 .contenedor-ofertas {
@@ -652,20 +602,90 @@ h3 {
   font-family: "Montserrat", sans-serif;
 }
 
-.playera-grande {
+.ultima-oferta {
+  grid-area: 3/4;
   grid-column: 1/3;
-  grid-row: 1/3;
-}
-
-.gorra-grande {
-  grid-column: 1/3;
-  grid-row: 1/2;
 }
 @media (min-width: 768px) {
-  .gorra-grande {
-    grid-column: 4/6;
+  .ultima-oferta {
+    grid-column: 5/6;
+    grid-row: 1/2;
+  }
+}
+
+.galeria {
+  display: grid;
+  align-items: center;
+  gap: 2rem;
+}
+@media (min-width: 480px) {
+  .galeria {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  .galeria {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+.galeria a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  position: relative;
+}
+.galeria a:hover {
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.16);
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.16);
+}
+
+@media (min-width: 992px) {
+  .producto-grande {
+    grid-column: 1/3;
     grid-row: 1/3;
   }
+}
+
+.submenu {
+  position: relative;
+}
+
+.submenu #carrito {
+  display: none;
+}
+
+.submenu:hover #carrito {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 1;
+  background-color: #FFFFFF;
+  padding: 1rem;
+  min-height: 30rem;
+  min-width: 20rem;
+}
+
+.titulos-carrito {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.vaciar-carrito {
+  padding: 1rem;
+  background-color: #540261;
+  color: #FFFFFF;
 }
 
 .pago-seguro {
@@ -737,16 +757,14 @@ h3 {
     text-align: left;
   }
 }
-.campos input:last-child {
-  height: auto;
-  padding: 2rem;
-  line-height: 0;
-  font-size: 1.6rem;
-  letter-spacing: 0;
+.campos input {
+  border: none;
+  padding: 0.8rem;
 }
 .campos textarea {
   height: 15rem;
   border: none;
+  padding: 0.8rem;
 }
 
 .campos .formulario-boton {
