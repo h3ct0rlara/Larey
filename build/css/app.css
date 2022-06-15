@@ -6,10 +6,8 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -44,12 +42,9 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
 
 /**
@@ -57,10 +52,8 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /* Text-level semantics
@@ -77,12 +70,9 @@ a {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -100,10 +90,8 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -153,14 +141,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -168,8 +152,7 @@ textarea {
  * 1. Show the overflow in Edge.
  */
 button,
-input {
-  /* 1 */
+input { /* 1 */
   overflow: visible;
 }
 
@@ -178,8 +161,7 @@ input {
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select {
-  /* 1 */
+select { /* 1 */
   text-transform: none;
 }
 
@@ -228,18 +210,12 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
 }
 
 /**
@@ -262,10 +238,8 @@ textarea {
  */
 [type=checkbox],
 [type=radio] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
 }
 
 /**
@@ -281,10 +255,8 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 [type=search] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
@@ -299,10 +271,8 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /* Interactive
@@ -350,7 +320,7 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
-  background-color: #eeeeee;
+  background-color: #f7f5f5;
 }
 
 p {
@@ -360,7 +330,7 @@ p {
 
 .contenedor {
   width: 95%;
-  max-width: 120rem;
+  max-width: 110rem;
   margin: 0 auto;
 }
 
@@ -374,7 +344,7 @@ a {
 }
 
 h1, h2, h3 {
-  margin: 0 0 5rem 0;
+  margin: 0 0 0 0;
 }
 
 h1 {
@@ -390,47 +360,28 @@ h3 {
 }
 
 .header {
-  background-image: url(../../../img/banner_god.svg);
-  padding-top: 3rem;
-  height: 60rem;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom center;
+  display: flex;
+  background-color: #FFFFFF;
+  height: auto;
+  flex-direction: column;
 }
 
 .contenido-header {
-  display: grid;
-  row-gap: 3.5rem;
-  text-align: center;
-}
-@media (min-width: 768px) {
-  .contenido-header {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    align-items: center;
-  }
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 0 0 0;
 }
 
 .logo {
   max-width: 13rem;
-  margin-top: 1rem;
-}
-@media (min-width: 768px) {
-  .logo {
-    display: flex;
-    justify-content: left;
-    margin-top: 0;
-  }
 }
 
 .busqueda {
-  display: grid;
+  max-width: 60rem;
   grid-template-columns: 4fr 0.2fr;
   background-color: #FFFFFF;
   padding: 1rem;
   position: relative;
-  margin-bottom: 0;
-  justify-content: center;
   -webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.16);
   -moz-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.16);
   box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.16);
@@ -447,7 +398,7 @@ h3 {
   right: 0;
   background-repeat: no-repeat;
   height: 100%;
-  background-color: #eeeeee;
+  background-color: #FFFFFF;
   text-indent: -9999px;
   width: 4rem;
   background-position: center center;
@@ -462,70 +413,58 @@ h3 {
   align-items: center;
   gap: 2rem;
 }
-@media (min-width: 768px) {
-  .barra-nav {
-    justify-content: right;
-  }
-}
 .barra-nav img {
   max-width: 23px;
 }
 
 .navegacion-principal {
-  justify-content: center;
+  display: flex;
+  font-size: 1.4rem;
+  gap: 2rem;
 }
 .navegacion-principal a {
-  color: #FFFFFF;
-  margin-right: 1rem;
-  font-size: 2rem;
-}
-.navegacion-principal a:last-child {
-  margin-right: 0;
-}
-.navegacion-principal a:hover {
-  color: #540261;
-}
-
-.header-texto {
-  text-align: center;
-  margin-top: 2rem;
-}
-@media (min-width: 768px) {
-  .header-texto {
-    margin-top: 17rem;
-  }
-}
-.header-texto h1, .header-texto p {
-  margin: 0;
-  line-height: 1.5;
   color: #000000;
 }
-@media (min-width: 768px) {
-  .header-texto h1, .header-texto p {
-    color: #000000;
-  }
-}
-.header-texto button {
-  border: none;
-  background-color: #FFFFFF;
-  border-radius: 0.5rem;
-  margin-top: 1rem;
-  color: #540261;
-  cursor: pointer;
-  padding: 1rem 2rem;
-  -webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.16);
-  -moz-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.16);
-  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.16);
+.navegacion-principal a:hover {
+  color: #400d47;
 }
 
-.galeria-ofertas a {
-  margin: auto auto;
+.categorias {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0 0 1rem 0;
+}
+.categorias span {
+  color: #000000;
+}
+.categorias span:hover {
+  color: #680378;
 }
 
-.contenedor-galeria {
-  margin-top: 4rem;
+.banner {
+  width: 100%;
+  height: 40rem;
+  background-image: url(../../../img/banner2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+.banner.ocultar {
+  display: none;
+}
+
+.header-texto h1, .header-texto p {
+  line-height: 1.5;
+  color: #000000;
+  font-weight: bold;
+}
+
 .contenedor-galeria h2 {
+  margin: 3rem 0;
   font-weight: 400;
   color: #999;
 }
@@ -556,23 +495,23 @@ h3 {
   }
 }
 
-.contenedor-ofertas {
+.contenedor-producto {
   display: grid;
   grid-template-rows: 1fr 1fr;
   background-color: #FFFFFF;
   border-radius: 1rem;
-  height: 40rem;
+  height: 35rem;
   max-width: 22.4rem;
   padding: 1rem;
   align-items: flex-end;
   margin: 0 auto;
 }
 @media (min-width: 480px) {
-  .contenedor-ofertas {
+  .contenedor-producto {
     margin: 0;
   }
 }
-.contenedor-ofertas:hover {
+.contenedor-producto:hover {
   -webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.16);
   -moz-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.16);
   box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.16);
@@ -580,7 +519,10 @@ h3 {
 
 .oferta-info {
   max-height: 40rem;
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #f7f5f5;
+}
+.oferta-info h3 {
+  font-size: 1.5rem;
 }
 .oferta-info p {
   margin: 0;
@@ -591,15 +533,16 @@ h3 {
 }
 .oferta-info .precio {
   font-size: 2.4rem;
+  margin-bottom: 1rem;
 }
-.oferta-info .info {
+.oferta-info .agregar-carrito {
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  overflow: hidden;
-  line-height: 1.3;
-  font-size: 1.4rem;
-  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  background-color: #400d47;
+  color: #FFFFFF;
+  padding: 1rem;
+  border-radius: 0.3rem;
 }
 
 .ultima-oferta {
@@ -659,6 +602,9 @@ h3 {
   position: relative;
 }
 
+.submenu {
+  padding: 1rem 0 1rem 1rem;
+}
 .submenu #carrito {
   display: none;
 }
@@ -673,19 +619,30 @@ h3 {
   z-index: 1;
   background-color: #FFFFFF;
   padding: 1rem;
-  min-height: 30rem;
-  min-width: 20rem;
+  min-height: 40rem;
+  min-width: 35rem;
+  border: 1px solid #f7f5f5;
 }
 
 .titulos-carrito {
   display: flex;
-  gap: 1.5rem;
+  justify-content: space-between;
 }
 
-.vaciar-carrito {
-  padding: 1rem;
-  background-color: #540261;
+.carrito-footer {
+  display: grid;
+  gap: 1rem;
+}
+.carrito-footer p {
+  margin: 0;
+}
+
+.ir-carrito {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
   color: #FFFFFF;
+  background-color: #000000;
 }
 
 .pago-seguro {
@@ -702,7 +659,7 @@ h3 {
   }
 }
 .pago-seguro h3 {
-  color: #540261;
+  color: #400d47;
   font-size: 2rem;
   margin: 1rem 0 0 0;
 }
@@ -731,7 +688,7 @@ h3 {
 }
 .redes-sociales h3 {
   margin-bottom: 1rem;
-  color: #540261;
+  color: #400d47;
 }
 .redes-sociales p {
   margin: 0;
@@ -744,7 +701,7 @@ h3 {
 .campos h2 {
   margin: 0;
   text-align: center;
-  color: #540261;
+  color: #400d47;
 }
 .campos p {
   text-align: center;
@@ -815,7 +772,7 @@ input[type=number] {
   display: grid;
   position: fixed;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .header-contacto {
     top: 40%;
     left: 1rem;

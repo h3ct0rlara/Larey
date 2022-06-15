@@ -6,7 +6,7 @@
     display: grid;
     position: fixed;
     
-    @include m.tablet {
+    @include m.desktop {
         top: 40%;
         left: 1rem;
         gap: 1.5rem;

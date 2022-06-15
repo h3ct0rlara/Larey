@@ -6,6 +6,7 @@
 }
 
 .submenu {
+    padding: 1rem 0 1rem 1rem;
     #carrito{
         display: none;
     }
@@ -22,17 +23,29 @@
     z-index: 1;
     background-color: v.$blanco;
     padding: 1rem;
-    min-height: 30rem;
-    min-width: 20rem;
+    min-height: 40rem;
+    min-width: 35rem;
+
+    border: 1px solid v.$gris;
 }
 
 .titulos-carrito {
     display: flex;
-    gap: 1.5rem;
+    justify-content: space-between;
 }
 
-.vaciar-carrito {
-    padding: 1rem;
-    background-color: v.$morado_texto;
+.carrito-footer {
+    display: grid;
+    gap: 1rem;
+    p {
+        margin: 0;
+    }
+}
+
+.ir-carrito {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
     color: v.$blanco;
+    background-color: v.$negro;
 }
