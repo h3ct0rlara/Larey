@@ -1,9 +1,17 @@
 @forward 'header';
+@forward 'sub_nav';
+// @forward 'menuCarrito';
 @forward 'slider';
 @forward 'ofertas';
 @forward 'main';
-@forward 'menuCarrito';
+@forward 'categorias';
 @forward 'compraSegura';
-@forward 'formulario';
+@forward 'contacto';
 @forward 'footer';
 @forward 'redes_sociales';
+
+// Sub-Paginas
+
+// nosotros
+@forward  'nosotros';
+@forward 'formulario';

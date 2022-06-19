@@ -5,15 +5,58 @@
     incluirTemplate('header', false);
     
 ?>
+    <section class="contenedo-banner">
+        <div class="contenedor-slider">
+            <div class="slider" id="slider">
+                <div class="slider-section">
+                    <a href="">
+                        <img src="img/banner1.jpg" alt="" class="slider-img">
+                    </a>
+                </div>
+                <div class="slider-section">
+                    <a href="">
+                        <img src="img/banner2.jpg" alt="" class="slider-img">
+                    </a>
+                </div>
+                <div class="slider-section">
+                    <a href="">
+                        <img src="img/banner3.jpg" alt="" class="slider-img">
+                    </a>
+                </div>
+                <div class="slider-section">
+                    <a href="">
+                        <img src="img/banner4.jpg" alt="" class="slider-img">
+                    </a>
+                </div>
+                <div class="slider-section">
+                    <a href="">
+                        <img src="img/banner5.jpg" alt="" class="slider-img">
+                    </a>
+                </div>
+                <div class="slider-section">
+                    <a href="">
+                        <img src="img/banner6.jpg" alt="" class="slider-img">
+                    </a>
+                </div>
+            </div>
+
+            <div class="slider-btn slider-btn-left" id="btn-left">
+                <img src="/img/izquierda.svg" alt="Icono izquierda">
+            </div>
+            <div class="slider-btn slider-btn-right" id="btn-right">
+                <img src="/img/derecha.svg" alt="Icono derecha">
+            </div>
+        </div>   
+    </section>
 
 
-    <main class="contenedor contenedor-galeria">
+    <section class="contenedor seccion ofertas">
 
         <h2>Ofertas</h2>
 
-        <div class="contenedor-productos">            
+        <div class="contenedor-ofertas" >            
 
-            <div class="galeria-ofertas" id="productos">
+            <div class="galeria-ofertas" id="ofertas">
                 
                 <div class="contenedor-producto" data-id="1">
                     <a href="productos.html">
@@ -59,76 +102,147 @@
                         <a class="agregar-carrito" href="#">Agregar al carrito</a>
                     </div>
                 </div>
-            
+
                 <div class="contenedor-producto" data-id="4">
                     <a href="#">
                         <picture class="contenedor-imagen">
                                 <img src="img/gorra_magenta.jpg" alt="Imagen Oferta">
                         </picture>
                     </a>
+
                     <div class="oferta-info">
-                        <h3>Gorra Magenta</h3>
+                        <h3>Playera</h3>
                         <p class="oferta"><span>$600</span></p>
                         <p class="precio"><samp>$855</samp></p>
                         <a class="agregar-carrito" href="#">Agregar al carrito</a>
                     </div>
                 </div>
 
-
-            
                 <div class="contenedor-producto" data-id="5">
                     <a href="#">
                         <picture class="contenedor-imagen">
-                                <img src="img/taza_blanca.2.png" alt="Imagen Oferta">
+                                <img src="img/gorra_vino.jpg" alt="Imagen Oferta">
                         </picture>
                     </a>
 
                     <div class="oferta-info">
-                        <h3>Taza Blanca</h3>
+                        <h3>Playera</h3>
                         <p class="oferta"><span>$600</span></p>
                         <p class="precio"><samp>$855</samp></p>
                         <a class="agregar-carrito" href="#">Agregar al carrito</a>
                     </div>
                 </div>
-                
+
+                <div class="contenedor-producto" data-id="6">
+                    <a href="#">
+                        <picture class="contenedor-imagen">
+                                <img src="img/playera_negra.jpg" alt="Imagen Oferta">
+                        </picture>
+                    </a>
+
+                    <div class="oferta-info">
+                        <h3>Playera</h3>
+                        <p class="oferta"><span>$600</span></p>
+                        <p class="precio"><samp>$855</samp></p>
+                        <a class="agregar-carrito" href="#">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="contenedor-producto" data-id="7">
+                    <a href="#">
+                        <picture class="contenedor-imagen">
+                                <img src="img/gorra_negra.jpg" alt="Imagen Oferta">
+                        </picture>
+                    </a>
+
+                    <div class="oferta-info">
+                        <h3>Playera</h3>
+                        <p class="oferta"><span>$600</span></p>
+                        <p class="precio"><samp>$855</samp></p>
+                        <a class="agregar-carrito" href="#">Agregar al carrito</a>
+                    </div>
+                </div>
+
+                <div class="contenedor-producto" data-id="8">
+                    <a href="#">
+                        <picture class="contenedor-imagen">
+                                <img src="img/gorra_magenta.jpg" alt="Imagen Oferta">
+                        </picture>
+                    </a>
+
+                    <div class="oferta-info">
+                        <h3>Playera</h3>
+                        <p class="oferta"><span>$600</span></p>
+                        <p class="precio"><samp>$855</samp></p>
+                        <a class="agregar-carrito" href="#">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carrucel-btn btn-left" id="left-ofertas">
+                <img src="/img/izquierda.svg" alt="Icono izquierda">
+            </div>
+            <div class="carrucel-btn btn-right" id="right-ofertas">
+                <img src="/img/derecha.svg" alt="Icono derecha">
             </div>
         </div>
+    </section>
 
-        <h2 class="galeria-titulo">Productos</h2>
-
-        <div class="contenedor-productos" id="galeria">
-
-            <div class="galeria">
-                <a class="producto-grande" href="#">
-                    <picture class="contenedor-imagen">
-                        <img src="img/playera_roja.jpg" alt="Imagen playera">
-                    </picture>
-                </a>
-                <a href="#">
-                    <picture class="contenedor-imagen">
-                        <img src="img/gorra_azul.jpg" alt="Imagen playera">
-                    </picture>
-                </a>
-                <a href="#">
-                    <picture class="contenedor-imagen">
-                        <img src="img/taza_magica.jpg" alt="Imagen playera">
-                    </picture>
-                </a>
-                <a href="">
-                    <picture class="contenedor-imagen">
-                        <img src="img/taza_blanca.2.png" alt="Imagen playera">
-                    </picture>
-                </a>
-                <a href="#">
-                    <picture class="contenedor-imagen">
-                        <img src="img/gorra_magenta.jpg" alt="Imagen playera">
-                    </picture>
-                </a>
+    <section class="contenedor seccion">
+        <h3>Donde desea plasmar su idea...</h3>
+        <div class="contenedor-categorias">
+            <div class="categoria">
+                <div class="contenedor-imagen-categoria">
+                    <img src="img/gorra.svg" alt="Imagen Categoria">
+                </div>
+                <h4>Gorras</h4>
+            </div>
+            <div class="categoria">
+                <div class="contenedor-imagen-categoria">
+                   <img src="img/playera.svg" alt="Imagen Categoria"> 
+                </div>
+                <h4>Playeras</h4>
+            </div>
+            <div class="categoria">
+                <div class="contenedor-imagen-categoria">
+                    <img src="img/cubrebocas.svg" alt="Imagen Categoria">
+                </div>
+                <h4>Cubrebocas</h4>
+            </div>
+            <div class="categoria">
+                <div class="contenedor-imagen-categoria">
+                    <img src="img/taza.svg" alt="Imagen Categoria">
+                </div>
+                <h4>Tazas</h4>
+            </div>
+            <div class="categoria">
+                <div class="contenedor-imagen-categoria">
+                    <img src="img/tarro.svg" alt="Imagen Categoria">
+                </div>
+                <h4>Tarron</h4>
+            </div>
+            <div class="categoria">
+                <div class="contenedor-imagen-categoria">
+                    <img src="img/sudadera.svg" alt="Imagen Categoria">
+                </div>
+                <h4>Sudaderas</h4>
+            </div>
+            <div class="categoria">
+                <div class="contenedor-imagen-categoria">
+                    <img src="img/rompecabezas.svg" alt="Imagen Categoria">
+                </div>
+                <h4>Rompecabezas</h4>
+            </div>
+            <div class="categoria">
+                <div class="contenedor-imagen-categoria">
+                    <img src="img/idea_usuario.svg" alt="Imagen Categoria">
+                </div>
+                <h4>Envianos tu idea</h4>
             </div>
         </div>
-    </main>
+    </section>
 
-    <section>
+    <section class="seccion">
         <div class="pago-seguro contenedor">
             <div class="pago-seguro-contenido">
                 <img src="https://img.icons8.com/ios/100/000000/bank-card-front-side--v1.png"/>
@@ -150,49 +264,12 @@
         </div>
     </section>
 
-    <div class="contenedor formulario" id="contacto">
-        <div class="redes-sociales">
-            <div>
-                <h3>Telefono</h3>
-                <p>55-00-55-55-00</p>
-                <p>55-00-55-55-00</p>
-            </div>
-
-            <div> 
-                <h3>Síguenos</h3>
-
-                <div>
-                    <a href="#">
-                        <img src="https://img.icons8.com/ios-filled/30/000000/facebook-new.png"/>
-                    </a>
-                    <a href="#">
-                        <img src="https://img.icons8.com/ios-glyphs/30/000000/instagram-new.png"/>
-                    </a>
-                    <a href="#">
-                        <img src="https://img.icons8.com/material-rounded/30/000000/whatsapp--v1.png"/>
-                    </a>
-                    <a href="#">
-                        <img src="https://img.icons8.com/ios-glyphs/30/000000/new-post.png"/>
-                    </a> 
-                </div>
-            </div>
-            
-             
+    <section class="seccion fondo-contacto">
+        <div class="contenedor contenedor-contacto">
+            <p>Si requieres una cotización, tienes alguna duda o pregunta, puedes llamar o mandar un correo y con gusto te atenderemos</p>
+            <a href="contacto.php">Contacto</a>
         </div>
-        <form class="campos">
-
-            <h2>Contactanos</h2>
-            <p>Si requieres de una cotización o tienes alguna duda o pregunta, también nos puedes llamar o mandar un correo, con gusto te atenderemos. </p>
-
-            <input type="text" placeholder="Ingresa tu nombre">
-            <input type="email" placeholder="Ingresa tu correo">
-            <input type="number" placeholder="Numero de telefono">
-            <textarea id="mensaje" placeholder="Escribe tu mensaje"></textarea>
-
-            <input class="formulario-boton" type="submit" value="Enviar">
-        </form>
-    </div>
-
+    </section>
 
 <?php 
     incluirTemplate('footer');

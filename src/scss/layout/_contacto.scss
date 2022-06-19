@@ -1,0 +1,34 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.fondo-contacto {
+    @include m.fondo-contacto;
+
+}
+
+.contenedor-contacto {
+    display: flex;
+    flex-direction: column;
+    height: 25rem;
+
+    
+    @include m.phone {
+        flex-direction: row;
+        height: 25rem;
+        align-items: center;
+        max-width: 70rem;
+        gap: 7rem;
+    }
+
+    p{
+        color: v.$blanco;
+        font-size: 2rem;
+        font-weight: v.$bold;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    a {
+        @include m.boton_morado;
+    }
+}

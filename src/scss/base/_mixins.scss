@@ -1,5 +1,6 @@
 @use 'variables' as v;
 
+// Tamaños dispocitivos
 @mixin phone {
     @media (min-width: v.$phone){
         @content;
@@ -24,22 +25,36 @@
     }
 }
 
-
+// sombras
 @mixin sombra {
     -webkit-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.16);
--moz-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.16);
-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.16);
+    -moz-box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.16);
+    box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.16);
 }
 
-@mixin formatear {
-    margin: 0;
-    padding: 0;
-    height: 0;
-    width: 0;
-    line-height: 0;
-    letter-spacing: 0;
-    text-decoration: 0;
-    font-weight: 0;
-    font-size: 0;
-    text-align: center;
+@mixin sombra-btn {
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+@mixin  sombra_header {
+    -webkit-box-shadow: 0px 4px 13px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 13px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 13px -2px rgba(0,0,0,0.75);
+}
+
+// Botones
+@mixin boton_morado {
+    margin: 0 auto;
+    padding: 1.5rem 3.5rem;
+    background-color: v.$morado_oscuro;
+    border-radius: 1rem;
+    color: v.$blanco;
+    font-weight: 700;
+}
+
+// Utilidad
+@mixin fondo_contacto {
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
 }

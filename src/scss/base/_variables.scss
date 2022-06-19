@@ -6,16 +6,24 @@ $fuente_logo: 'Dancing Script', cursive;
 // Colores
 $morado:  #680378;
 $morado_claro: #AE5CBB;
-$morado_oscuro: #400d47;
-$gris: #f7f5f5;
+$morado_oscuro: #210735;
+$gris: #ebebeb;
 $gris_texto: #999;
 $negro: #000000;
 $blanco: #FFFFFF;
 $verde: #7f8a48;
+// $otro_morado: #210735;
 
-/// tamaños de Media Queries
+// tamaños de Media Queries
 
 $phone: 480px;
 $tablet: 768px;
 $desktop: 992px;
 $desktopXL: 1200px;
+
+
+// Fuentes
+$delgada: 300;
+$regular: 400;
+$bold: 700;
+$black: 900;

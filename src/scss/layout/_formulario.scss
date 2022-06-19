@@ -2,23 +2,24 @@
 @use 'base/mixins' as m;
 
 .formulario {
-    margin-bottom: 5rem;
-    display: grid;
-    gap: 4rem;
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
 
     @include m.tablet {
-        grid-template-columns: repeat(2, 1fr);
+        flex-direction: row;
     }
 }
 
 .redes-sociales {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
-    margin: auto auto;
-    text-align: center;
+    justify-content: center;
+
 
     @include m.tablet {
-        margin: auto auto auto 5rem;
+
     }
     
     h3 {
@@ -31,6 +32,7 @@
 }
 
 .campos {
+    max-width: 50rem;
     display: grid;
     row-gap: 1rem;
 
@@ -68,21 +70,16 @@
 }
 
 .campos .formulario-boton {
-    margin: 0 auto;
-    padding: 1.5rem 3.5rem;
-    background-color: v.$morado;
-    border-radius: 1rem;
-    color: v.$blanco;
-    font-weight: 700;
+    @include m.boton_morado;
     @include m.sombra;
 }
 
-
-// Elimina flechas del input number
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
--webkit-appearance: none;
-margin: 0;
+.seccion-campo {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    
+    input {
+        width: 100%;
+    }
 }
-
-input[type=number] { -moz-appearance:textfield; }

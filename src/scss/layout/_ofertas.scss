@@ -1,34 +1,63 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 
-.contenedor-galeria{
+
+.contenedor-ofertas {
+    position: relative;
+    overflow: hidden;
+    padding-right: .5rem;
+}
+
+
+
+
+.ofertas {
+    max-width: 97rem;
+    
     h2 {
-        margin: 3rem 0;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
         font-weight: 400;
         color: v.$gris_texto;
     }
 }
+.carrucel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: v.$blanco;
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        @include m.sombra;
+    }
+    
+    img {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    &.btn-left {
+        left: 0;
+    }
+
+    &.btn-right{
+        right: 0;
+    }
+
+}
 
 .galeria-ofertas {
-    display: grid;
+    margin-left: -50%;
+    width: 200%;
+    display: flex;
     gap: 2rem;
-    grid-template-columns: repeat(1, 1fr);
-
-    @include m.phone {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    @include m.tablet {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    @include m.desktop {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    @include m.desktopXL {
-        grid-template-columns: repeat(5, 1fr);
-    }
 }
 
 .contenedor-producto {
@@ -37,10 +66,11 @@
     background-color: v.$blanco;
     border-radius: 1rem;
     height: 35rem;
-    max-width: 22.4rem;
+    max-width: 100%;
     padding: 1rem;
     align-items: flex-end;
     margin: 0 auto;
+
 
     @include m.phone {
         margin: 0;

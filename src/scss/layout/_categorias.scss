@@ -1,0 +1,62 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.contenedor-categorias{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    margin-top: 3rem;
+    background-color: v.$blanco;
+    border-radius: 1rem;
+
+    @include m.phone {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include m.tablet {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include m.desktop {
+        grid-template-columns: repeat(4, 1fr);
+    } 
+
+}
+
+.categoria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    max-height: 30rem;
+    padding: 2rem;
+    border: 1px solid v.$gris;
+    min-width: auto;
+    cursor: pointer;
+
+    &:hover{
+        background-color: v.$morado_oscuro;
+
+        img {
+            filter: invert(100%);
+        }
+
+        h4 {
+            color: v.$blanco;
+        }
+    }
+
+    h4 {
+        text-align: center;
+    }
+}
+
+.contenedor-imagen-categoria {
+    max-height: 15rem;
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}

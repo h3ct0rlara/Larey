@@ -3,9 +3,13 @@
 
 .header {
     display: flex;
-    background-color: v.$blanco;
-    height: auto;
+    background-color: v.$morado_oscuro;
+    height: auto;   
     flex-direction: column;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    @include m.sombra_header;
 }
 
 .contenido-header {
@@ -16,40 +20,44 @@
 }
 
 .logo {
-    max-width: 13rem;
+    max-width: 10rem;
+    filter: invert(100%);
 }
 
-.busqueda {
-    max-width: 60rem;
-    grid-template-columns: 4fr .2fr;
-    background-color: v.$blanco;
-    padding: 1rem;
-    position: relative;
+// .busqueda {
+//     max-width: 60rem;
+//     background-color: v.$blanco;
+//     padding: 1rem;
+//     position: relative;
 
-    // sombra
-    @include m.sombra;
+//     .buscador {
+//         width: 100%
+//     }
 
-    input {
-        border: none;
-        outline: none;
-    } 
-}
+//     // sombra
+//     @include m.sombra;
 
-.bt-busqueda {
-    background-image: url(../../../img/lupa.png);
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-repeat: no-repeat;
-    height: 100%;
-    background-color: v.$blanco;
-    text-indent: -9999px;
-    width: 4rem;
-    background-position: center center;
-    &:hover {
-        cursor: pointer;
-    }
-}
+//     input {
+//         border: none;
+//         outline: none;
+//     } 
+// }
+
+// .bt-busqueda {
+//     background-image: url(../../../img/lupa.png);
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     background-repeat: no-repeat;
+//     height: 100%;
+//     background-color: v.$blanco;
+//     text-indent: -9999px;
+//     width: 4rem;
+//     background-position: center center;
+//     &:hover {
+//         cursor: pointer;
+//     }
+// }
 
 .barra-nav {
     display: flex;
@@ -64,59 +72,29 @@
 
 .navegacion-principal {
     display: flex;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     gap: 2rem;
 
     a {
-
-        color: v.$negro;
+        color: v.$gris;
+        
 
         &:hover{
-            color: v.$morado_oscuro
+            color: v.$blanco;
         }
     }
 }
 
-.categorias {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin: 0 0 1rem 0;
-    
-    span {
-        color: v.$negro;
 
-        &:hover {
-            color: v.$morado;
-        }
-    }
-}
+// .banner {
+//     margin: 0 auto;
+//     max-width: 170rem;
 
-.banner {
-    width: 100%;
-    height: 40rem;
-    background-image: url(../../../img/banner2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center right;
+//     img {
+//         width: 100%;
+//     }
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    &.ocultar {
-        display: none;
-    }
-
-}
-
-.header-texto {
-
-    h1, p {
-        
-        line-height: 1.5;
-        color: v.$negro;
-        font-weight: bold;
-    }
-}
-
+//     &.cultar {
+//         display: none;
+//     }
+// }

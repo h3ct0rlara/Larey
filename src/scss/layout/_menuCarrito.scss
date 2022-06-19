@@ -1,18 +1,18 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 
-.submenu {
+.submenu-carrito {
     position: relative;
 }
 
-.submenu {
+.submenu-carrito {
     padding: 1rem 0 1rem 1rem;
     #carrito{
         display: none;
     }
 }
 
-.submenu:hover #carrito{
+.submenu-carrito:hover #carrito{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
