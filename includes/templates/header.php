@@ -30,23 +30,49 @@
                 <a href="index.php">
                     <img class="logo" src="img/logo.svg" alt="Imagen Logo">
                 </a>
-                <ul class="categorias">
-
-                
-                </ul>
       
                 <div class="barra-nav">
+                    <div class="submenu" >
+                        <span>Categorias</span>
+                        <img src="/img/icono_abajo.svg" alt="Icono abajo">
+
+                        <ul id="submenu">
+                            <a href="/productos.php">
+                                <li>Paquetes</li>
+                            </a>
+                            <a href="/productos.php">
+                                <li>Combos sublimacion</li>
+                            </a>
+                            <a href="/productos.php">
+                                <li>Blancos</li>
+                            </a>
+                            <a href="/productos.php">
+                                <li>Planchas</li>
+                            </a>
+                            <a href="/productos.php">
+                                <li>Plotters e Impresoras</li>
+                            </a>
+                            <a href="/productos.php">
+                                <li>Camero</li>
+                            </a>
+                            <a href="/productos.php">
+                                <li>DTF</li>
+                            </a>
+                            <a href="/productos.php">
+                                <li>Combustibles</li>
+                            </a>
+                            <a href="/productos.php">
+                                <li>Transfer 360</li>
+                            </a>
+                        </ul>
+                    </div>
+
                     <nav class="navegacion-principal">
                         <a href="nosotros.php">Nosotros</a>
                         <a href="contacto.php">Contacto</a>
                     </nav>
                 </div>   
             </div>
-
-            <ul class="submenu">
-                <span>Categorias</span>
-                <span>Otros servicios</span>
-            </ul>
         </div>    
     </header>
     </div>

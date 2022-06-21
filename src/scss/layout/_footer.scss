@@ -1,9 +1,11 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 
+
 .footer {
     background-color: v.$morado_oscuro;
     padding: 3rem 0;
+
     h3,p {
         color: v.$blanco;
         text-align: center;
@@ -60,6 +62,7 @@
     flex-direction: column;
     align-items: center;
     img {
+        filter: invert(100%);
         max-height: 4rem;
         max-width: 4rem;
     }

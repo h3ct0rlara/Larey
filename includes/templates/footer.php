@@ -22,17 +22,18 @@
 
                 <div class="redes-sociales-footer">
                     <h3>Redes sociales</h3>
-                <div>
-                    <a href="https://www.facebook.com/LareySD">
-                        <img src="/img/facebook.svg" alt="Icono facebook">
-                    </a>
-                    <a href="https://www.instagram.com/lareymx/">
-                        <img src="/img/instagram.svg" alt="Icono instagram">
-                    </a>
-                    <a href="">
-                        <img src="/img/whatsapp.svg" alt="Icono whatsapp">
-                    </a>
-                </div>
+                    
+                    <div>
+                        <a href="https://bit.ly/3b0jDGk">
+                            <img src="/img/facebook.svg" alt="Icono facebook">
+                        </a>
+                        <a href="https://bit.ly/3HBhux6">
+                            <img src="/img/instagram.svg" alt="Icono instagram">
+                        </a>
+                        <a href="https://bit.ly/3O9ouE2">
+                            <img src="/img/whatsapp.svg" alt="Icono whatsapp">
+                        </a>
+                    </div>
             </div>
         </div>
 

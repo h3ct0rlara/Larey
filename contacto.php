@@ -18,16 +18,16 @@
                 <h3>Síguenos</h3>
 
                 <div>
-                    <a href="#">
+                    <a href="https://bit.ly/3b0jDGk">
                         <img src="https://img.icons8.com/ios-filled/30/000000/facebook-new.png"/>
                     </a>
-                    <a href="#">
+                    <a href="https://bit.ly/3HBhux6">
                         <img src="https://img.icons8.com/ios-glyphs/30/000000/instagram-new.png"/>
                     </a>
-                    <a href="#">
+                    <a href="https://bit.ly/3O9ouE2">
                         <img src="https://img.icons8.com/material-rounded/30/000000/whatsapp--v1.png"/>
                     </a>
-                    <a href="#">
+                    <a href="mailto:h3ct0r.l4r4@gmail.com?Subject=Informes%20cotizacion%20producto">
                         <img src="https://img.icons8.com/ios-glyphs/30/000000/new-post.png"/>
                     </a> 
                 </div>
