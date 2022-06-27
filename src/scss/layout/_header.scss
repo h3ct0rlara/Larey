@@ -4,59 +4,186 @@
 .header {
     display: flex;
     background-color: v.$morado_oscuro;
-    height: auto;   
     flex-direction: column;
-    // position: sticky;
-    // top: 0;
-    // z-index: 1;
-
-
     @include m.sombra_header;
 }
 
 .contenido-header {
     display: flex;
     padding: 1.5rem 0;
+    
+    @include m.tablet {
+        gap: 2.5rem;
+    }
 
 }
 
 .logo {
-    max-width: 10rem;
-    margin-right: 3rem;
+    max-width: 12rem;
     filter: invert(100%);
 }
 
-// .busqueda {
-//     max-width: 60rem;
-//     background-color: v.$blanco;
-//     padding: 1rem;
-//     position: relative;
+.barra-nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
 
-//     .buscador {
-//         width: 100%
-//     }
+    @include m.desktop {
+        justify-content: space-between;
+    }
+}
 
-//     // sombra
-//     @include m.sombra;
+.busqueda {
+    display: flex;
+    width: 100%;
+    margin: 0 2.5rem;
+    background-color: v.$blanco;
+    border-radius: .8rem;
 
-//     input {
-//         border: none;
-//         outline: none;
-//     } 
-// }
+    input {
+        width: 100%;
+        padding: 1rem;
+        border: none;
+        border-radius: .8rem;
+        outline: none; // Elimina resaltado
+    }
 
-// .bt-busqueda {
-//     background-image: url(../../../img/lupa.png);
-//     position: absolute;
-//     top: 0;
-//     right: 0;
-//     background-repeat: no-repeat;
-//     height: 100%;
-//     background-color: v.$blanco;
-//     text-indent: -9999px;
-//     width: 4rem;
-//     background-position: center center;
-//     &:hover {
-//         cursor: pointer;
-//     }
-// }
+    button {
+        background-color: v.$gris;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: .5rem;
+
+        img {
+
+            max-height: 2.3rem;
+            max-width: 2.3rem;
+        }
+    }
+}
+
+
+.header {
+    position: relative;
+
+    .menu {
+        display: none;
+        align-items: center;
+        cursor: pointer;
+        height: 165%;
+        
+        
+    
+        @include m.desktop {
+            display: flex;
+        }
+    
+        img {
+            max-width: 2.3rem;
+            filter: invert(100%);
+        }
+    
+        span {
+            color: v.$blanco;
+        }
+    
+    
+        ul {
+            width: 100%;
+            justify-content: center;
+            cursor: default;
+        }
+    
+        #submenu{
+            display: none;
+            margin: 0;
+            padding: 0;
+            background-color: v.$morado_claro;
+            min-width: 20rem;
+    
+            li {
+                display: block ruby;
+                list-style: none;
+                color: v.$blanco;
+                padding: 1.5rem 1.5rem;
+                font-size: 1.5rem;
+    
+                &:first-child {
+                    border: none;
+                }
+    
+                &:hover {
+                    color: v.$negro;
+                    background-color: v.$blanco;
+                }
+            }
+        }
+    
+        &:hover {
+            img {
+                filter: none;
+            }
+    
+            span {
+                color: v.$negro;
+            }
+    
+            #submenu {
+                display: flex;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                z-index: 1;
+            }
+        }
+    
+    }
+}
+
+
+.navegacion-principal {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    gap: 2rem;
+
+
+
+    a:not(:last-child) {
+        display: none;
+        
+        @include m.desktop {
+            display: flex;
+            color: v.$blanco;
+
+            &:hover{
+            color: v.$negro;
+        }
+        }
+    }
+
+    img {
+        height: 2.3rem;
+        width: 2.3rem;
+        filter: invert(100%);
+        margin: 1rem;
+    }
+
+}
+
+.menu-hamburgesa {
+    margin-left: 2rem;
+    display: flex;
+    height: 2.3rem;
+    width: 2.3rem;
+    filter: invert(100%);
+    cursor: pointer;
+
+    @include m.desktop {
+        display: none;
+    }
+}

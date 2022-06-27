@@ -11,12 +11,12 @@
     <!-- Preload - Ayuda a cargar archivosmas rapido-->
 
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:ital,wght@0,400;1,600&display=swap" crossorigin="crossorigin" as="font" >
-    <link rel="preload" href="build/css/app.css" as="style">
+    <link rel="preload" href="/build/css/app.css" as="style">
 
 
     <!--Despues se agrega la los archivos normalmente-->
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="build/css/app.css">
+    <link rel="stylesheet" href="/build/css/app.css">
 
     <!-- Prefetch - Carga la siguiente pagina que esperas el usuario visite-->
     <link rel="Prefetch" href="#">
@@ -32,7 +32,7 @@
                 </a>
       
                 <div class="barra-nav">
-                    <div class="submenu" >
+                    <div class="menu" >
                         <span>Categorias</span>
                         <img src="/img/icono_abajo.svg" alt="Icono abajo">
 
@@ -67,10 +67,24 @@
                         </ul>
                     </div>
 
+                    <div class="busqueda">
+                        <input type="text" placeholder="Busca lo que quieras">
+
+                        <button type="submit">
+                            <img src="/img/busqueda.svg" alt="Icono busqueda">
+                        </button>
+                    </div>
+
                     <nav class="navegacion-principal">
                         <a href="nosotros.php">Nosotros</a>
                         <a href="contacto.php">Contacto</a>
+
+                        <a href="/carrito.php">
+                            <img src="/img/carrito.svg" alt="Icono Carrito">
+                        </a>
                     </nav>
+
+                    <img class="menu-hamburgesa" src="/img/menu_hamburgesa.svg" alt="Menu Hamburgesa">
                 </div>   
             </div>
         </div>    

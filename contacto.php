@@ -6,7 +6,7 @@
     
 ?>
 
-    <main class="contenedor seccion formulario" id="contacto">
+    <main class="contenedor seccion formulario" id="formulario">
         <div class="redes-sociales">
             <div>
                 <h3>Telefono</h3>
@@ -19,16 +19,16 @@
 
                 <div>
                     <a href="https://bit.ly/3b0jDGk">
-                        <img src="https://img.icons8.com/ios-filled/30/000000/facebook-new.png"/>
+                        <img src="/img/facebook.svg" alt="Icono Facebook">
                     </a>
                     <a href="https://bit.ly/3HBhux6">
-                        <img src="https://img.icons8.com/ios-glyphs/30/000000/instagram-new.png"/>
+                        <img src="/img/instagram.svg" alt="Icono Instagram">
                     </a>
                     <a href="https://bit.ly/3O9ouE2">
-                        <img src="https://img.icons8.com/material-rounded/30/000000/whatsapp--v1.png"/>
+                        <img src="/img/whatsapp.svg" alt="Icono Whatsapp">
                     </a>
                     <a href="mailto:h3ct0r.l4r4@gmail.com?Subject=Informes%20cotizacion%20producto">
-                        <img src="https://img.icons8.com/ios-glyphs/30/000000/new-post.png"/>
+                        <img src="/img/correo.svg" alt="Icono Correo">
                     </a> 
                 </div>
             </div>

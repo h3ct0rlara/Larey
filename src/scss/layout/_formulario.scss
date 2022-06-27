@@ -3,23 +3,26 @@
 
 .formulario {
     display: flex;
-    justify-content: center;
-    gap: 10rem;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 5rem;
+    margin-bottom: 5rem;
 
-    @include m.tablet {
+    @include m.desktop{
         flex-direction: row;
+        gap: 10rem;
+        justify-content: center;
     }
 }
 
 .redes-sociales {
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    justify-content: center;
+    gap: 4rem;
+    text-align: center;
 
-
-    @include m.tablet {
-
+    @include m.desktop {
+        flex-direction: column;
+        justify-content: center;
     }
     
     h3 {
@@ -28,6 +31,15 @@
     }
     p {
         margin: 0;
+    }
+
+    img {
+        max-height: 4rem;
+        max-width: 4rem;
+
+        &:hover {
+            filter: invert(50%);
+        }
     }
 }
 
@@ -59,7 +71,6 @@
     input {
         border: none;
         padding: .8rem;
-
     }
 
     textarea {
@@ -72,6 +83,7 @@
 .campos .formulario-boton {
     @include m.boton_morado;
     @include m.sombra;
+    margin-top: 2rem;
 }
 
 .seccion-campo {

@@ -1,10 +1,8 @@
 <?php
     require 'includes/funciones.php';
-
-    $ocultarBanner = true;
     incluirTemplate('header', false);
-    
 ?>
+
     <section class="contenedo-banner">
         <div class="contenedor-slider">
             <div class="slider" id="slider">
@@ -49,144 +47,147 @@
         </div>   
     </section>
 
-
     <section class="contenedor seccion ofertas">
 
         <h2>Ofertas</h2>
 
-        <div class="contenedor-ofertas" >            
-
-            <div class="galeria-ofertas" id="ofertas">
-                
-                <div class="contenedor-producto" data-id="1">
-                    <a href="productos.html">
-                        <picture class="contenedor-imagen">
-                                <img src="img/taza_magica.jpg" alt="Imagen Oferta">
-                        </picture>
-                    </a>
-
-                    <div class="oferta-info" >
-                        <h3>Taza Magica</h3>
-                        <p class="oferta"><span>$600</span></p>
-                        <p class="precio"><samp>$855</samp></p>
-                        <a class="agregar-carrito" href="#">Agregar al carrito</a>
-                    </div>
-                </div>
-
-                <div class="contenedor-producto" data-id="2">
-                    <a href="#">
-                        <picture class="contenedor-imagen">
-                                <img src="img/gorra_azul.jpg" alt="Imagen Oferta">
-                        </picture>
-                    </a>
-
-                    <div class="oferta-info">
-                        <h3>Gorra Azul</h3>
-                        <p class="oferta"><span>$600</span></p>
-                        <p class="precio"><samp>$855</samp></p>
-                        <a class="agregar-carrito" href="#">Agregar al carrito</a>
-                    </div>
-                </div>
+        <div class="contenedor-ofertas" >       
             
-                <div class="contenedor-producto" data-id="3">
-                    <a href="#">
-                        <picture class="contenedor-imagen">
-                                <img src="img/playera_roja.jpg" alt="Imagen Oferta">
-                        </picture>
-                    </a>
-
-                    <div class="oferta-info">
-                        <h3>Playera</h3>
-                        <p class="oferta"><span>$600</span></p>
-                        <p class="precio"><samp>$855</samp></p>
-                        <a class="agregar-carrito" href="#">Agregar al carrito</a>
-                    </div>
-                </div>
-
-                <div class="contenedor-producto" data-id="4">
-                    <a href="#">
-                        <picture class="contenedor-imagen">
-                                <img src="img/gorra_magenta.jpg" alt="Imagen Oferta">
-                        </picture>
-                    </a>
-
-                    <div class="oferta-info">
-                        <h3>Playera</h3>
-                        <p class="oferta"><span>$600</span></p>
-                        <p class="precio"><samp>$855</samp></p>
-                        <a class="agregar-carrito" href="#">Agregar al carrito</a>
-                    </div>
-                </div>
-
-                <div class="contenedor-producto" data-id="5">
-                    <a href="#">
-                        <picture class="contenedor-imagen">
-                                <img src="img/gorra_vino.jpg" alt="Imagen Oferta">
-                        </picture>
-                    </a>
-
-                    <div class="oferta-info">
-                        <h3>Playera</h3>
-                        <p class="oferta"><span>$600</span></p>
-                        <p class="precio"><samp>$855</samp></p>
-                        <a class="agregar-carrito" href="#">Agregar al carrito</a>
-                    </div>
-                </div>
-
-                <div class="contenedor-producto" data-id="6">
-                    <a href="#">
-                        <picture class="contenedor-imagen">
-                                <img src="img/playera_negra.jpg" alt="Imagen Oferta">
-                        </picture>
-                    </a>
-
-                    <div class="oferta-info">
-                        <h3>Playera</h3>
-                        <p class="oferta"><span>$600</span></p>
-                        <p class="precio"><samp>$855</samp></p>
-                        <a class="agregar-carrito" href="#">Agregar al carrito</a>
-                    </div>
-                </div>
-
-                <div class="contenedor-producto" data-id="7">
-                    <a href="#">
-                        <picture class="contenedor-imagen">
-                                <img src="img/gorra_negra.jpg" alt="Imagen Oferta">
-                        </picture>
-                    </a>
-
-                    <div class="oferta-info">
-                        <h3>Playera</h3>
-                        <p class="oferta"><span>$600</span></p>
-                        <p class="precio"><samp>$855</samp></p>
-                        <a class="agregar-carrito" href="#">Agregar al carrito</a>
-                    </div>
-                </div>
-
-                <div class="contenedor-producto" data-id="8">
-                    <a href="#">
-                        <picture class="contenedor-imagen">
-                                <img src="img/gorra_magenta.jpg" alt="Imagen Oferta">
-                        </picture>
-                    </a>
-
-                    <div class="oferta-info">
-                        <h3>Playera</h3>
-                        <p class="oferta"><span>$600</span></p>
-                        <p class="precio"><samp>$855</samp></p>
-                        <a class="agregar-carrito" href="#">Agregar al carrito</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="carrucel-btn btn-left" id="left-ofertas">
+            <button class="ofertas-btn oferta-prev">
                 <img src="/img/izquierda.svg" alt="Icono izquierda">
-            </div>
-            <div class="carrucel-btn btn-right" id="right-ofertas">
+            </button>
+
+                <div class="lista-ofertas" id="ofertas">
+                    
+                    <div class="contenedor-producto" data-id="1">
+                        <a href="productos.html">
+                            <img src="img/taza_magica.jpg" alt="Imagen Oferta">
+                        </a>
+
+                        <div class="oferta-info" >
+                            <h3>Taza Magica</h3>
+                            <p class="oferta"><span>$600</span></p>
+                            <p class="precio"><samp>$855</samp></p>
+                        </div>
+                    </div>
+
+                    <div class="contenedor-producto" data-id="2">
+                        <a href="#">
+                            <img src="img/gorra_azul.jpg" alt="Imagen Oferta">
+                        </a>
+
+                        <div class="oferta-info">
+                            <h3>Gorra Azul</h3>
+                            <p class="oferta"><span>$600</span></p>
+                            <p class="precio"><samp>$855</samp></p>
+                        </div>
+                    </div>
+                
+                    <div class="contenedor-producto" data-id="3">
+                        <a href="#">
+                            <img src="img/playera_roja.jpg" alt="Imagen Oferta">
+                        </a>
+
+                        <div class="oferta-info">
+                            <h3>Playera</h3>
+                            <p class="oferta"><span>$600</span></p>
+                            <p class="precio"><samp>$855</samp></p>
+                        </div>
+                    </div>
+
+                    <div class="contenedor-producto" data-id="4">
+                        <a href="#">
+                            <img src="img/gorra_magenta.jpg" alt="Imagen Oferta">
+                        </a>
+
+                        <div class="oferta-info">
+                            <h3>Playera</h3>
+                            <p class="oferta"><span>$600</span></p>
+                            <p class="precio"><samp>$855</samp></p>
+                        </div>
+                    </div>
+
+                    <div class="contenedor-producto" data-id="5">
+                        <a href="#">
+                            <img src="img/gorra_vino.jpg" alt="Imagen Oferta">
+                        </a>
+
+                        <div class="oferta-info">
+                            <h3>Playera</h3>
+                            <p class="oferta"><span>$600</span></p>
+                            <p class="precio"><samp>$855</samp></p>
+                        </div>
+                    </div>
+
+                    <div class="contenedor-producto" data-id="6">
+                        <a href="#">
+                            <img src="img/playera_negra.jpg" alt="Imagen Oferta">
+                        </a>
+
+                        <div class="oferta-info">
+                            <h3>Playera</h3>
+                            <p class="oferta"><span>$600</span></p>
+                            <p class="precio"><samp>$855</samp></p>
+                        </div>
+                    </div>
+
+                    <div class="contenedor-producto" data-id="7">
+                        <a href="#">
+                            <img src="img/gorra_negra.jpg" alt="Imagen Oferta">
+                        </a>
+
+                        <div class="oferta-info">
+                            <h3>Playera</h3>
+                            <p class="oferta"><span>$600</span></p>
+                            <p class="precio"><samp>$855</samp></p>
+                        </div>
+                    </div>
+
+                    <div class="contenedor-producto" data-id="8">
+                        <a href="#">
+                            <img src="img/gorra_magenta.jpg" alt="Imagen Oferta">
+                        </a>
+
+                        <div class="oferta-info">
+                            <h3>Playera</h3>
+                            <p class="oferta"><span>$600</span></p>
+                            <p class="precio"><samp>$855</samp></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contenedor-producto" data-id="9">
+                        <a href="#">
+                            <img src="img/gorra_negra.jpg" alt="Imagen Oferta">
+                        </a>
+
+                        <div class="oferta-info">
+                            <h3>Playera</h3>
+                            <p class="oferta"><span>$600</span></p>
+                            <p class="precio"><samp>$855</samp></p>
+                        </div>
+                    </div>
+
+                    <div class="contenedor-producto" data-id="10">
+                        <a href="#">
+                            <img src="img/gorra_negra.jpg" alt="Imagen Oferta">
+                        </a>
+
+                        <div class="oferta-info">
+                            <h3>Playera</h3>
+                            <p class="oferta"><span>$600</span></p>
+                            <p class="precio"><samp>$855</samp></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div role="tablist" class="carousel-indicadores"></div>
+            
+            <button class="ofertas-btn oferta-next">
                 <img src="/img/derecha.svg" alt="Icono derecha">
-            </div>
+            </button>
         </div>
     </section>
+    
 
     <section class="contenedor seccion">
         <h3>Donde desea plasmar su idea...</h3>
@@ -242,22 +243,54 @@
         </div>
     </section>
 
+    <section class="contenedor seccion alianzas-contenedor">
+
+        <h2>Socios comerciales</h2>
+
+        <div class="alianzas-contenido">
+            <video loading="lazy" class="video" autoplay muted loop>
+                <source src="/video/video.mp4" type="video/mp4">
+                <source src="/video/video.ogg" type="video/ogg">
+                <source src="/video/video.webm" type="video/webm">
+            </video>
+
+            <div class="alianzas">
+                <picture>
+                    <source srcset="" type="image/avif">
+                    <source srcset="" type="image/webp">
+                    <img loading="lazy" src="/img/silhouette.png" alt="Logo silhouette">
+                </picture>
+                <picture>
+                    <source srcset="" type="image/avif">
+                    <source srcset="" type="image/webp">
+                    <img loading="lazy" src="/img/DTF.png" alt="Logo DTF">
+                </picture>
+                <picture>
+                    <source srcset="" type="image/avif">
+                    <source srcset="" type="image/webp">
+                    <img loading="lazy" src="/img/Epson.png" alt="Logo Epson">
+                </picture>
+            </div>
+        </div>
+        
+    </section>
+
     <section class="seccion">
         <div class="pago-seguro contenedor">
             <div class="pago-seguro-contenido">
-                <img src="https://img.icons8.com/ios/100/000000/bank-card-front-side--v1.png"/>
+                <img src="/img/tarjeta_pago.svg"/>
                 <h3>Elige como pagar</h3>
                 <p>Inventore doloremque unde ut rerum dolore, magnam fuga ea harum corrupti adipisci.</p>
             </div>
    
             <div class="pago-seguro-contenido">
-                <img src="https://img.icons8.com/wired/100/000000/box--v1.png"/>
+                <img src="/img/envio_paqueteria.svg"/>
                 <h3>Envio Gratis desde $599</h3>
                 <p>Inventore doloremque unde ut rerum dolore, magnam fuga ea harum corrupti adipisci.</p>
             </div>
 
             <div class="pago-seguro-contenido">
-                <img src="https://img.icons8.com/ios/100/000000/security-checked.png"/>
+                <img src="/img/seguridad.svg"/>
                 <h3>Seguridad</h3>
                 <p>Inventore doloremque unde ut rerum dolore, magnam fuga ea harum corrupti adipisci.</p>
             </div>

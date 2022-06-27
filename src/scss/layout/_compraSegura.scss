@@ -17,7 +17,6 @@
     h3 {
         color: v.$morado_oscuro;
         font-size: 2rem;
-        margin: 1rem 0 0 0;
 
     } 
 
@@ -28,7 +27,15 @@
 }
 
 .pago-seguro-contenido {
-    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+
+    img {
+        max-height: 10rem;
+        max-width: 20rem;
+    }
     
     &:first-child {
         margin-top: 0;

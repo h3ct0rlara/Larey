@@ -1,0 +1,47 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.alianzas-contenedor {
+    h2 {
+        margin-bottom: 2rem;
+        color: v.$gris_texto;
+    }
+}
+
+.alianzas-contenido {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    background-color: v.$blanco;
+    padding: 3rem 0;
+    
+    @include m.desktop {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+        
+    }
+}
+
+.video {
+    max-width: 60rem;
+    width: 100%;
+}
+
+.alianzas {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    picture {
+        max-width: 15rem;
+    }
+
+    img {
+        width: 100%;
+        max-width: 15rem;
+        gap: 2rem;
+    }
+}
