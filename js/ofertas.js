@@ -18,7 +18,7 @@ window.addEventListener('load', function() {
                 slidesToShow: 2,
                 slidesToScroll: 2,
                 itemWidth: 150,
-                duration: 0.5
+                duration: 0.25
               }
             },
             
@@ -28,7 +28,7 @@ window.addEventListener('load', function() {
                 slidesToShow: 3,
                 slidesToScroll: 3,
                 itemWidth: 150,
-                duration: 0.5
+                duration: 0.25
               }
             },
 
@@ -38,7 +38,7 @@ window.addEventListener('load', function() {
                   slidesToShow: 4,
                   slidesToScroll: 4,
                   itemWidth: 150,
-                  duration: 0.5
+                  duration: 0.25
                 }
             },
 
@@ -48,7 +48,7 @@ window.addEventListener('load', function() {
                   slidesToShow: 5,
                   slidesToScroll: 5,
                   itemWidth: 150,
-                  duration: 0.5
+                  duration: 0.25
                 }
             }
           ]

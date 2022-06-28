@@ -1,0 +1,44 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.header {
+    position: relative;
+
+    .lista-hamburgesa {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: v.$morado;
+        margin: 0;
+        padding: 0;
+        z-index: 1;
+        top: 100%;
+        left: 0;
+        height: auto;
+        width: 100%;
+        text-align: center;
+        
+    
+        @include m.desktop {
+            display: none;
+        }
+
+        a {
+            padding: 1rem;
+
+            &:hover {
+                background-color: v.$blanco;
+
+                li {
+                    color: v.$negro;
+                }
+            }
+        }
+
+        li{
+            list-style: none;
+            color: v.$blanco;
+
+        }
+    }
+}

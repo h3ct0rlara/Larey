@@ -3,44 +3,8 @@
 
 .formulario {
     display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    gap: 5rem;
+    justify-content: center;
     margin-bottom: 5rem;
-
-    @include m.desktop{
-        flex-direction: row;
-        gap: 10rem;
-        justify-content: center;
-    }
-}
-
-.redes-sociales {
-    display: flex;
-    gap: 4rem;
-    text-align: center;
-
-    @include m.desktop {
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    h3 {
-        margin-bottom: 1rem;
-        color: v.$morado_oscuro
-    }
-    p {
-        margin: 0;
-    }
-
-    img {
-        max-height: 4rem;
-        max-width: 4rem;
-
-        &:hover {
-            filter: invert(50%);
-        }
-    }
 }
 
 .campos {

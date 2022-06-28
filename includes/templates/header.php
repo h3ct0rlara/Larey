@@ -6,17 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Larey</title>
 
-    
-
     <!-- Preload - Ayuda a cargar archivosmas rapido-->
-
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:ital,wght@0,400;1,600&display=swap" crossorigin="crossorigin" as="font" >
+    <link rel="stylesheet preload" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:ital,wght@0,400;1,600&display=swap" crossorigin="crossorigin" as="style">
     <link rel="preload" href="/build/css/app.css" as="style">
 
 
     <!--Despues se agrega la los archivos normalmente-->
+    <link rel="shortcut icon" href="/build/img/logo.svg">
+
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/build/css/app.css">
+    <link href="/build/css/app.css" rel="stylesheet">
 
     <!-- Prefetch - Carga la siguiente pagina que esperas el usuario visite-->
     <link rel="Prefetch" href="#">
@@ -28,13 +27,13 @@
         <div class="contenedor">
             <div class="contenido-header">
                 <a href="index.php">
-                    <img class="logo" src="img/logo.svg" alt="Imagen Logo">
+                    <img class="logo" src="/build/img/logo.svg" alt="Imagen Logo">
                 </a>
       
                 <div class="barra-nav">
                     <div class="menu" >
                         <span>Categorias</span>
-                        <img src="/img/icono_abajo.svg" alt="Icono abajo">
+                        <img src="/build/img/icono_abajo.svg" alt="Icono abajo">
 
                         <ul id="submenu">
                             <a href="/productos.php">
@@ -71,7 +70,7 @@
                         <input type="text" placeholder="Busca lo que quieras">
 
                         <button type="submit">
-                            <img src="/img/busqueda.svg" alt="Icono busqueda">
+                            <img src="/build/img/busqueda.svg" alt="Icono busqueda">
                         </button>
                     </div>
 
@@ -80,11 +79,19 @@
                         <a href="contacto.php">Contacto</a>
 
                         <a href="/carrito.php">
-                            <img src="/img/carrito.svg" alt="Icono Carrito">
+                            <img src="/build/img/carrito.svg" alt="Icono Carrito">
                         </a>
                     </nav>
 
-                    <img class="menu-hamburgesa" src="/img/menu_hamburgesa.svg" alt="Menu Hamburgesa">
+                    <div>
+                        <img class="menu-hamburgesa" src="/build/img/menu_hamburgesa.svg" alt="Menu Hamburgesa" id="menu-activo">
+
+                        <!-- <ul class="lista-hamburgesa" id="menu-hamburgesa">
+                            <a href="/nosotros.php"><li>Nosotros</li></a>
+                            <a href="/contacto.php"><li>Contacto</li></a>
+                            <a href="/contacto.php"><li>Productos</li></a>
+                        </ul> -->
+                    </div>
                 </div>   
             </div>
         </div>    

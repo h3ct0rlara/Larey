@@ -3,7 +3,7 @@
         <div class="contenedor contenedor-footer">
             <div class="contenido-footer">
                 <a href="/index.php">
-                    <img class="logo-footer" src="/img/logo.svg" alt="Icono logo">
+                    <img class="logo-footer" src="/build/img/logo.svg" alt="Icono logo">
                 </a>
                 
                 
@@ -14,16 +14,15 @@
                         <h3>Contacto</h3>
                         <div>
                             <div class="contenido-contacto">
-                                <img src="/img/telefono.svg" alt="Icono telefono">
+                                <img src="/build/img/telefono.svg" alt="Icono telefono">
                                 <p>55-00-55-88-99</p>
                             </div>
                             <div class="contenido-contacto">
-                                <img src="/img/telefono.svg" alt="Icono telefono">
+                                <img src="/build/img/telefono.svg" alt="Icono telefono">
                                 <p>55-00-55-88-99</p>
                             </div>
                         </div>
                     </div>
-
                    
                     
                     <div class="redes-sociales-footer">
@@ -31,16 +30,16 @@
 
                         <div>
                             <a href="https://bit.ly/3b0jDGk">
-                                <img src="/img/facebook.svg" alt="Icono facebook">
+                                <img src="/build/img/facebook.svg" alt="Icono facebook">
                             </a>
                             <a href="https://bit.ly/3HBhux6">
-                                <img src="/img/instagram.svg" alt="Icono instagram">
+                                <img src="/build/img/instagram.svg" alt="Icono instagram">
                             </a>
                             <a href="https://bit.ly/3O9ouE2">
-                                <img src="/img/whatsapp.svg" alt="Icono whatsapp">
+                                <img src="/build/img/whatsapp.svg" alt="Icono whatsapp">
                             </a>
                             <a href="mailto:h3ct0r.l4r4@gmail.com?Subject=Informes%20cotizacion%20producto">
-                                <img src="/img/correo.svg" alt="Icono Correo">
+                                <img src="/build/img/correo.svg" alt="Icono Correo">
                             </a>
                         </div>
                     </div>
@@ -57,8 +56,8 @@
 
     <script src="/js/modernizr.js"></script>
     <script src="/js/glider.js"></script>
-    
+    <script src="/js/menuHamburgesa.js"></script>
     <script src="/js/slider.js"></script>
-    <script src="/js/ofertas.js"></script>
+    <script src="/js/ofertas.js"></script> <!--Problemas de performans -->
 </body>
 </html>
