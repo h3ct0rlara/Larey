@@ -1,7 +1,5 @@
 <?php
     require 'includes/funciones.php';
-
-    $ocultarBanner = true;
     incluirTemplate('header');
     
 ?>

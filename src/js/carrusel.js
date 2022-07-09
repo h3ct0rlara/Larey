@@ -1,5 +1,4 @@
-const ofertas = document.querySelector('.lista-ofertas');
-
+/** Ofertas Carrusel **/
 window.addEventListener('load', function() {
     new Glider(ofertas, {
         slidesToShow: 1,
@@ -54,3 +53,4 @@ window.addEventListener('load', function() {
           ]
     });
 });
+/** Fin Ofertas Carrusel **/

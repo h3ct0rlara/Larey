@@ -1,3 +1,5 @@
+/** Banner **/
+const ofertas = document.querySelector('.lista-ofertas');
 
 const slider = document.querySelector('#slider');
 let sliderSection = document.querySelectorAll('.slider-section');
@@ -7,9 +9,6 @@ const btnLeft = document.querySelector('#btn-left');
 const btnRight = document.querySelector('#btn-right');
 
 slider.insertAdjacentElement('afterbegin', sliderSectionLast);
-
-
-
 
 function next() {
     let sliderSectionFirs = document.querySelectorAll('.slider-section')[0];
@@ -37,20 +36,17 @@ function prev() {
         slider.insertAdjacentElement('afterbegin', sliderSectionLast);
         slider.style.marginLeft = "-100%";
     }, 500);
-
 }
 
 btnRight.addEventListener('click', function() {
     next();
 });
 
-
 btnLeft.addEventListener('click', function() {
     prev();
 });
 
-
-
-// setInterval(function() {
-//     next();
-// }, 5000);
+setInterval(function() {
+    next();
+}, 5000);
+/** Fin Banner **/

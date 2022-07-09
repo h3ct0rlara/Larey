@@ -7,10 +7,9 @@
     margin-bottom: 5rem;
 }
 
-.campos {
+.contenedor-formulario {
+
     max-width: 50rem;
-    display: grid;
-    row-gap: 1rem;
 
     h2 {
         margin: 0;
@@ -31,6 +30,13 @@
             text-align: left;
         }
     }
+}
+
+.campos {
+
+    display: grid;
+    row-gap: 1rem;
+    border: none;
 
     input {
         border: none;

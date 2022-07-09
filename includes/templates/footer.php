@@ -47,17 +47,15 @@
         </div>
 
         <div class="aviso-privacidad">
-            <p>Condiciones de uso</p>
+            <p>Larey © 2022</p>
             <p>Aviso de privacidad</p>
-            <p>© 2022, Larey.com, Inc. o sus afiliados</p>
         </div>
     </footer>
 
 
-    <script src="/js/modernizr.js"></script>
-    <script src="/js/glider.js"></script>
-    <script src="/js/menuHamburgesa.js"></script>
-    <script src="/js/slider.js"></script>
-    <script src="/js/ofertas.js"></script> <!--Problemas de performans -->
+    <script src="/build/js/base/glider.js"></script>
+    <script src="/build/js/banner.js"></script>
+    <script src="/build/js/mobileMenu.js"></script>
+    <script src="/build/js/carrusel.js"></script>
 </body>
 </html>

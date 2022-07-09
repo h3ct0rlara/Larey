@@ -1,6 +1,6 @@
 <?php
     require 'includes/funciones.php';
-    incluirTemplate('header', false);
+    incluirTemplate('header');
 ?>
 
     <section class="contenedo-banner">
@@ -253,7 +253,7 @@
     </section>
 
     <section class="contenedor seccion">
-        <h3>Donde desea plasmar su idea...</h3>
+        <h3>Productos</h3>
         <div class="contenedor-categorias">
             <div class="categoria">
                 <div class="contenedor-imagen-categoria">
@@ -341,28 +341,33 @@
     <section class="seccion">
         <div class="pago-seguro contenedor">
             <div class="pago-seguro-contenido">
-                <img src="/build/img/tarjeta_pago.svg"/>
+
+                <picture>
+                    <source srcset="/build/img/paypal.avif" type="image/avif">
+                    <source srcset="/build/img/paypal.webp" type="image/webp">
+                    <img loading="lazy" width="200" height="300" src="/build/img/paypal.jpg" alt="Imagen Paypal">
+                </picture>
                 <h3>Elige como pagar</h3>
-                <p>Inventore doloremque unde ut rerum dolore, magnam fuga ea harum corrupti adipisci.</p>
+                <p>Paga con PayPal a meses sin intereses sin importar la tarjeta de crédito que uses</p>
             </div>
    
             <div class="pago-seguro-contenido">
                 <img src="/build/img/envio_paqueteria.svg"/>
                 <h3>Envio Gratis desde $599</h3>
-                <p>Inventore doloremque unde ut rerum dolore, magnam fuga ea harum corrupti adipisci.</p>
+                <p>Inventore doloremque unde ut rerum dolore, magnam fuga ea harum corrupti adipisci</p>
             </div>
 
             <div class="pago-seguro-contenido">
                 <img src="/build/img/seguridad.svg"/>
                 <h3>Seguridad</h3>
-                <p>Inventore doloremque unde ut rerum dolore, magnam fuga ea harum corrupti adipisci.</p>
+                <p>Inventore doloremque unde ut rerum dolore, magnam fuga ea harum corrupti adipisci</p>
             </div>
         </div>
     </section>
 
     <section class="seccion fondo-contacto">
         <div class="contenedor contenedor-contacto">
-            <p>Si requieres una cotización, tienes alguna duda o pregunta, puedes llamar o mandar un correo y con gusto te atenderemos</p>
+            <p>Si requieres una cotización puedes contactarnos, con gusto te atenderemos</p>
             <a href="contacto.php">Contacto</a>
         </div>
     </section>

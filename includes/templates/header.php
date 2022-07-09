@@ -86,11 +86,33 @@
                     <div>
                         <img class="menu-hamburgesa" src="/build/img/menu_hamburgesa.svg" alt="Menu Hamburgesa" id="menu-activo">
 
-                        <!-- <ul class="lista-hamburgesa" id="menu-hamburgesa">
-                            <a href="/nosotros.php"><li>Nosotros</li></a>
+                        <ul class="lista-hamburgesa" id="menu-hamburgesa">
+                            <a href="/index.php">
+                                <img src="/build/img/home.svg" alt="Icono casa">
+                                <li>Inicio</li>
+                            </a>
+                            <a href="/productos.php">
+                                <img src="/build/img/oferta.svg" alt="Icono ofertas">
+                                <li>Ofertas</li>
+                            </a>
+                            <a href="/nosotros.php">
+                                <img src="/build/img/nosotros.svg" alt="Icono nostros">
+                                <li>Nosotros</li>
+                            </a>
+                            <a href="/contacto.php">
+                                <img src="/build/img/contacto.svg" alt="icono contacto">
+                                <li>Contacto</li>
+                            </a>
+                            <a href="/productos.php">
+                                <img src="/build/img/productos.svg" alt="Icono productos">
+                                <li>Productos</li>
+                            </a>
+                        </ul>
+
+                        <ul class="lista-hamburgesa" id="menu-hamburgesa">
                             <a href="/contacto.php"><li>Contacto</li></a>
-                            <a href="/contacto.php"><li>Productos</li></a>
-                        </ul> -->
+                            <a href="/productos.php"><li>Productos</li></a>
+                        </ul>
                     </div>
                 </div>   
             </div>

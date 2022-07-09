@@ -2,84 +2,75 @@
 // Dependencias Gulp
 const {src, dest, watch, parallel} = require("gulp");
 
-
 // Dependencias css
 const sass = require("gulp-sass")(require("sass"));
 const plumber = require("gulp-plumber");
 
-const autoprefixer = require('autoprefixer');
-const cssnano = require('cssnano');
-const postcss = require('gulp-postcss');
+// Dependecias JavaScrip
+const uglify = require('gulp-uglify');
+const sourceMaps = require('gulp-sourcemaps');
+const concat = require('gulp-concat');
 
 
 // Dependencias imagenes
 const cache = require('gulp-cache');
 const imagemin = require('gulp-imagemin');
-
 const webp = require('gulp-webp');
 const avif = require('gulp-avif');
 
+// Rutas
+const paths = {
+    scss: 'src/scss/**/*.scss',
+    js: 'src/js/**/*.js',
+    imagenes: 'src/img/**/*'
+}
 
 /** Funciones **/
-function css(done){
+function css(){
     
-    src('src/scss/**/*.scss') // Paso 1. Identificar el archivo de SASS
+    return src(paths.scss)
         .pipe(plumber()) // Para no detener la ejecucion
         .pipe( sass() ) // Paso 2. Compilarlo
-        // .pipe( postcss([ autoprefixer(), cssnano() ]))
-        .pipe( dest('build/css') ); // Paso 3. Almacenarla en el disco duro
-
-
-    done(); // Callback que avisa gulp cuando llegamos al final de la funcion
+        .pipe( dest('./build/css') );
 }
 
-function imagenes(done) {
-    // Calidad de la imagen jpg
-    const opciones = {
-        optimizationLevel: 3
-    };
-
-    src('src/img/**/*.{png,jpg}')
-        .pipe(cache(imagemin(opciones)))
-        .pipe(dest('build/img'))
-
-    done();
+function javascript() {
+    return src(paths.js)
+        // .pipe(sourceMaps.init())
+        .pipe(uglify())
+        // .pipe(concat('bundle.js'))
+        // .pipe(sourceMaps.write())
+        .pipe(dest('./build/js'))
 }
 
-function versionWebp(done){
-    // Calidad de la imagen webp
-    const opciones = {
-        quality: 50
-    };
+function imagenes() {
 
-    src('src/img/**/*.{png,jpg}')
-        .pipe(webp(opciones))
+    return src('./src/img/**/*.{png,jpg}')
+        .pipe(cache(imagemin({ optimizationLevel: 3 })))
         .pipe(dest('build/img'))
+}
 
-    done();
+function versionWebp(){
+
+    return src('./src/img/**/*.{png,jpg}')
+        .pipe(webp({ quality: 50 }))
+        .pipe(dest('build/img'))
 }
 
 
-function versionAvif(done){
-    // Calidad de la imagen webp
-    const opciones = {
-        quality: 50
-    };
+function versionAvif(){
 
-    src('src/img/**/*.{png,jpg}')
-        .pipe(avif(opciones))
+    return src('./src/img/**/*.{png,jpg}')
+        .pipe(avif({quality: 50}))
         .pipe(dest('build/img'))
-
-    done();
 }
 
 
 // Escucha por los cambioes en los archivos .sass
-function dev(done){
+function dev(){
     
-    watch("src/scss/**/*.scss", css);
-
-    done();
+    watch(paths.scss, css);
+    watch(paths.js, javascript);
 }
 
 
@@ -87,7 +78,8 @@ exports.css = css;
 exports.imagenes = imagenes;
 exports.versionWebp = versionWebp;
 exports.versionAvif = versionAvif;
+exports.javascript = javascript;
 
 
-// exports.dev = parallel (imagenes, versionWebp, versionAvif, dev);
-exports.dev = parallel (dev);
+exports.dev = parallel (imagenes, versionWebp, versionAvif, dev);
+// exports.dev = parallel (dev);

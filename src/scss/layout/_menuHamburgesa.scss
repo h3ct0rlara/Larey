@@ -8,15 +8,23 @@
         position: absolute;
         display: flex;
         flex-direction: column;
-        background-color: v.$morado;
+        background-color: v.$gris;
         margin: 0;
-        padding: 0;
+        padding: 2rem;
         z-index: 1;
         top: 100%;
         left: 0;
         height: auto;
         width: 100%;
-        text-align: center;
+        visibility: hidden;
+        opacity: 0;
+
+        &.mostrar{
+            visibility: visible;
+            opacity: 1;
+            transition: visibility .3s ease-in-out, opacity .4s linear;
+            
+        }
         
     
         @include m.desktop {
@@ -24,21 +32,23 @@
         }
 
         a {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
             padding: 1rem;
 
-            &:hover {
-                background-color: v.$blanco;
-
-                li {
-                    color: v.$negro;
-                }
+            img {
+                max-height: 2.3rem;
+                max-width: 3rem;
             }
-        }
 
-        li{
-            list-style: none;
-            color: v.$blanco;
+            li{
+                list-style: none;
+                color: v.$negro;
+                font-weight: 600;
+            }
 
+            
         }
     }
 }

@@ -557,11 +557,16 @@ h3 {
 }
 
 .busqueda {
-  display: flex;
+  display: none;
   width: 100%;
   margin: 0 2.5rem;
   background-color: #FFFFFF;
   border-radius: 0.8rem;
+}
+@media (min-width: 992px) {
+  .busqueda {
+    display: flex;
+  }
 }
 .busqueda input {
   width: 100%;
@@ -691,15 +696,21 @@ h3 {
   position: absolute;
   display: flex;
   flex-direction: column;
-  background-color: #680378;
+  background-color: #ebebeb;
   margin: 0;
-  padding: 0;
+  padding: 2rem;
   z-index: 1;
   top: 100%;
   left: 0;
   height: auto;
   width: 100%;
-  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+}
+.header .lista-hamburgesa.mostrar {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0.3s ease-in-out, opacity 0.4s linear;
 }
 @media (min-width: 992px) {
   .header .lista-hamburgesa {
@@ -707,17 +718,19 @@ h3 {
   }
 }
 .header .lista-hamburgesa a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   padding: 1rem;
 }
-.header .lista-hamburgesa a:hover {
-  background-color: #FFFFFF;
+.header .lista-hamburgesa a img {
+  max-height: 2.3rem;
+  max-width: 3rem;
 }
-.header .lista-hamburgesa a:hover li {
-  color: #000000;
-}
-.header .lista-hamburgesa li {
+.header .lista-hamburgesa a li {
   list-style: none;
-  color: #FFFFFF;
+  color: #000000;
+  font-weight: 600;
 }
 
 .contenedo-banner {
@@ -1217,26 +1230,30 @@ h3 {
   margin-bottom: 5rem;
 }
 
-.campos {
+.contenedor-formulario {
   max-width: 50rem;
-  display: grid;
-  row-gap: 1rem;
 }
-.campos h2 {
+.contenedor-formulario h2 {
   margin: 0;
   text-align: center;
   color: #361153;
 }
-.campos p {
+.contenedor-formulario p {
   text-align: center;
 }
 @media (min-width: 768px) {
-  .campos h2 {
+  .contenedor-formulario h2 {
     text-align: left;
   }
-  .campos p {
+  .contenedor-formulario p {
     text-align: left;
   }
+}
+
+.campos {
+  display: grid;
+  row-gap: 1rem;
+  border: none;
 }
 .campos input {
   border: none;
